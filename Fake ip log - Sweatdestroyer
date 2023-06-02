@@ -1,0 +1,151 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local a22 = Instance.new("TextBox")
+local s2 = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.193376064, 0, 0.3986637, 0)
+Frame.Size = UDim2.new(0, 321, 0, 417)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0, 0, 0.880095899, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Made by Tropxz#5665 for SweatDestroyer"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+a22.Name = "a22"
+a22.Parent = Frame
+a22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a22.Position = UDim2.new(0, 0, 0.0479616299, 0)
+a22.Size = UDim2.new(0, 200, 0, 50)
+a22.Font = Enum.Font.SourceSans
+a22.MultiLine = true
+a22.PlaceholderText = "Player"
+a22.Text = ""
+a22.TextColor3 = Color3.fromRGB(0, 0, 0)
+a22.TextSize = 14.000
+
+s2.Name = "s2"
+s2.Parent = Frame
+s2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+s2.Position = UDim2.new(0, 0, 0.258992791, 0)
+s2.Size = UDim2.new(0, 200, 0, 50)
+s2.Font = Enum.Font.SourceSans
+s2.MultiLine = true
+s2.PlaceholderText = "program"
+s2.Text = ""
+s2.TextColor3 = Color3.fromRGB(0, 0, 0)
+s2.TextSize = 14.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0, 0, 0.424460441, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Sumbit"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(0, 0, 0.167865694, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 29)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "OR"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+-- Scripts:
+
+local function VZQGQ_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local one = script.Parent.a22
+	local two = script.Parent.s2
+	
+	local function chat(message)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, 'All'); -- FireServer (<string> Message, <string> Channel) 
+	end
+	
+	function generateRandomString()
+		math.randomseed(os.time()) -- initialize the random number generator
+		math.random(); math.random(); math.random() -- warm up the generator
+	
+		local str = tostring(math.random(100, 999)) .. "." -- generate the first 3-digit number and append a period
+		str = str .. tostring(math.random(10, 99)) .. "." -- generate the second 2-digit number and append a period
+		str = str .. tostring(math.random(10, 99)) -- generate the third 2-digit number
+	
+		return str -- return the random string of numbers
+	end
+	
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+	if one.Text == "" then
+	else
+		chat("cracking "..one.Text.." 's Data")
+		wait(5)
+		chat("found returning to the webhost of the script..")
+		wait(5)
+		chat(""..one.Text.." ip is "..generateRandomString().." L bozo")
+		end
+		end)
+end
+coroutine.wrap(VZQGQ_fake_script)()
+local function OHHXKO_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(OHHXKO_fake_script)()
