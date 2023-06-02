@@ -228,6 +228,9 @@
 
 
 
+local verison = 0.01
+local Game = "Universal"
+
 local function chat(message)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, 'All'); -- FireServer (<string> Message, <string> Channel) 
     end
@@ -491,6 +494,20 @@ local function chat(message)
        end
    })
    
+      T:AddButton({
+       Name = "Brag",
+       Callback = function() 
+       chat("I got the new SweatDestroyer,   Verison: "..verison.."Game: "..Game)
+       end
+   })
+   T:AddButton({
+       Name= "Calcutor",
+       Callback = function()
+
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Calcutor%20-%20For%20universal", true))()
+           chat("Calucator Loaded")
+       end
+   })
    
    OrionLib:Init()
 
