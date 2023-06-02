@@ -508,6 +508,32 @@ local function chat(message)
            chat("Calucator Loaded")
        end
    })
+
+   T:AddButton({
+       Name="Fake Ip log",
+       Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Fake%20ip%20log%20-%20Sweatdestroyer", true))()
+       end
+   })
+
+T:AddButton({
+    Name = "Fast, not that kind",
+    Callback = function(args)
+local function onPlayingAnimation(animationTrack)
+    animationTrack:AdjustSpeed(500)
+end
+
+local player = game:GetService("Players").LocalPlayer
+local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+if humanoid then
+    humanoid.AnimationPlayed:Connect(onPlayingAnimation)
+end
+
+    end
+})
+
+
+
    
    OrionLib:Init()
 
