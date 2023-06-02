@@ -228,268 +228,270 @@
 
 
 
--- printing shit
-print("person detected: " .. game.Players.LocalPlayer.Name.."/ "..game.Players.LocalPlayer.DisplayName)
-print("but fr why u looking")
-print("Here me out, im not a skid totally ")
-
--- saving the files and shit for some idiotic reason
-local Foldername = "Negar"
-local overrideDatabase = true
-
-if (isfolder(Foldername) and overrideDatabase) then
-elseif (isfolder(Foldername) and not overrideDatabase) then
-    return warn("Overriding the database is automatically disabled for security purposes.")
-else
-    makefolder(Foldername)
-end
-
-writefile(Foldername.."\\GangsterGangster.txt", "If you reading this ur a gangster :) Made by Tropxz#5665.")
-writefile(Foldername.."\\MainScript.lua", "Not made yet")
-
-
--- main code
-
--- varibles
-
-local playersService = game:GetService("Players")
-local textService = game:GetService("TextService")
-local lightingService = game:GetService("Lighting")
-local textChatService = game:GetService("TextChatService")
-local inputService = game:GetService("UserInputService")
-local runService = game:GetService("RunService")
-local replicatedStorageService = game:GetService("ReplicatedStorage")
-local tweenService = game:GetService("TweenService")
-local gameCamera = workspace.CurrentCamera
-local lplr = playersService.LocalPlayer -- why did i call this lplr WHO KNOWS FR
-local HttpService = game:GetService("HttpService")
-local highlight = Instance.new("Highlight") -- Replace this with your own highlight object
-local Mouse = lplr:GetMouse()
-local orbitspeed = 0.1 -- define orbitspeed here
-local orbitradius = 5 -- define orbitradius here
-
--- ui library coz I was too lazy to make a ui 💀
-
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-
-OrionLib:MakeNotification({
-	Name = "Offically loaded",
-	Content = "Check workspace for a secret",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
-local Window = OrionLib:MakeWindow({Name = "SweatDestroyer - Universal", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"}) -- disabled folder for a already folder
--- POV: YOU HAVE 2 FOLDERS FOR 1 SCRIPT
--- COuldnt be me
-
--- functions
---[[
-local function isVulnerable(plr)
-	return plr.Humanoid.Health > 0 and not plr.Character.FindFirstChildWhichIsA(plr.Character, "ForceField")
-end
-
-local function calculateMoveVector(cameraRelativeMoveVector)
-	local c, s
-	local _, _, _, R00, R01, R02, _, _, R12, _, _, R22 = gameCamera.CFrame:GetComponents()
-	if R12 < 1 and R12 > -1 then
-		c = R22
-		s = R02
-	else
-		c = R00
-		s = -R01*math.sign(R12)
-	end
-	local norm = math.sqrt(c*c + s*s)
-	return Vector3.new(
-		(c*cameraRelativeMoveVector.X + s*cameraRelativeMoveVector.Z)/norm,
-		0,
-		(c*cameraRelativeMoveVector.Z - s*cameraRelativeMoveVector.X)/norm
-	)
-end
---]]
--- disabled them functions since we are not doing bedwars
-
 local function chat(message)
- game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, 'All'); -- FireServer (<string> Message, <string> Channel) 
- end
-
-local function getRandomPlayer()
-    local players = game:GetService("Players"):GetPlayers()
-    if #players > 0 then
-        local randomIndex = math.random(1, #players)
-        return players[randomIndex]
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, 'All'); -- FireServer (<string> Message, <string> Channel) 
     end
-    return nil
-end
+   
+    -- would be in function place but we need it for the loading thing
+   
+   -- printing shit
+   print("person detected: " .. game.Players.LocalPlayer.Name.."/ "..game.Players.LocalPlayer.DisplayName)
+   print("but fr why u looking")
+   print("Here me out, im not a skid totally ")
+   
+   -- saving the files and shit for some idiotic reason
 
-local randomPlayer = getRandomPlayer()
+   chat("Making files.")
+   local Foldername = "Negar"
+   local overrideDatabase = true
+   
+   if (isfolder(Foldername) and overrideDatabase) then
+   elseif (isfolder(Foldername) and not overrideDatabase) then
+       return warn("Overriding the database is automatically disabled for security purposes.")
+   else
+       makefolder(Foldername)
+   end
+   
+   writefile(Foldername.."\\GangsterGangster.txt", "If you reading this ur a gangster :) Made by Tropxz#5665.")
+   writefile(Foldername.."\\MainScript.lua", "Not made yet")
+   
+   
+   -- main code
+   
+   -- varibles
+   chat("Varible loading.")
+   local playersService = game:GetService("Players")
+   local textService = game:GetService("TextService")
+   local lightingService = game:GetService("Lighting")
+   local textChatService = game:GetService("TextChatService")
+   local inputService = game:GetService("UserInputService")
+   local runService = game:GetService("RunService")
+   local replicatedStorageService = game:GetService("ReplicatedStorage")
+   local tweenService = game:GetService("TweenService")
+   local gameCamera = workspace.CurrentCamera
+   local lplr = playersService.LocalPlayer -- why did i call this lplr WHO KNOWS FR
+   local HttpService = game:GetService("HttpService")
+   local highlight = Instance.new("Highlight") -- Replace this with your own highlight object
+   local Mouse = lplr:GetMouse()
+   local orbitspeed = 0.1 -- define orbitspeed here
+   local orbitradius = 5 -- define orbitradius here
+   
+   -- ui library coz I was too lazy to make a ui 💀
+   chat("Loading Library.")
+   local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+   
+   OrionLib:MakeNotification({
+       Name = "Loading window.",
+       Content = "Check workspace for a secret",
+       Image = "rbxassetid://4483345998",
+       Time = 5
+   })
+   
+   chat("Loading Window.")
+   local Window = OrionLib:MakeWindow({Name = "SweatDestroyer - Universal", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"}) -- disabled folder for a already folder
+   -- POV: YOU HAVE 2 FOLDERS FOR 1 SCRIPT
+   -- COuldnt be me
+   chat("Loading Functions.")
+   -- functions
+   --[[
+   local function isVulnerable(plr)
+       return plr.Humanoid.Health > 0 and not plr.Character.FindFirstChildWhichIsA(plr.Character, "ForceField")
+   end
+   
+   local function calculateMoveVector(cameraRelativeMoveVector)
+       local c, s
+       local _, _, _, R00, R01, R02, _, _, R12, _, _, R22 = gameCamera.CFrame:GetComponents()
+       if R12 < 1 and R12 > -1 then
+           c = R22
+           s = R02
+       else
+           c = R00
+           s = -R01*math.sign(R12)
+       end
+       local norm = math.sqrt(c*c + s*s)
+       return Vector3.new(
+           (c*cameraRelativeMoveVector.X + s*cameraRelativeMoveVector.Z)/norm,
+           0,
+           (c*cameraRelativeMoveVector.Z - s*cameraRelativeMoveVector.X)/norm
+       )
+   end
+   --]]
+   -- disabled them functions since we are not doing bedwars
+   
+   
+   
+   local function getRandomPlayer()
+       local players = game:GetService("Players"):GetPlayers()
+       if #players > 0 then
+           local randomIndex = math.random(1, #players)
+           return players[randomIndex]
+       end
+       return nil
+   end
+   
+   local randomPlayer = getRandomPlayer()
+   
+   --[[
+   chat("Anyone like byfron, I dont it tried stopping me")
+   --]]
+   
+   -- i can make the player say anything now <:)
+   
+   -- Hmmmmm, what should i call this 
+   -- maybe main NO NO lets do
+   local PC = Window:MakeTab({
+       Name = "Player Config",
+       Icon = "rbxassetid://4483345998",
+       PremiumOnly = false
+   })
+   
+   
+   -- bro ima test rq (1/06/23 8:30pm AEST)
+   -- ay it works and i got a friend
+   
+   PC:AddButton({
+       Name = "rejoin!",
+       Callback = function()
+       game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, player)
+         end    
+   })
+   
+   PC:AddSlider({
+       Name = "Speed",
+       Min = 16,
+       Max = 25,
+       Default = 16,
+       Color = Color3.fromRGB(2, 113, 72), -- u can change the colour <:)
+       Increment = 1, -- huh?
+       ValueName = "",
+       Callback = function(Value)
+           lplr.Character.Humanoid.WalkSpeed = Value
+       end    
+   })
+   
+   -- Im so good at coding :) u dont even understand what this means *sigh*
+   -- Just noticed im not using vs code to write this code what im I? I know a dumbass
+   -- FR!!!!
+   
+   PC:AddSlider({
+       Name = "JumpPower", -- to make you jump higher :D
+       Min = 50,
+       Max = 70, --hmmmmmmmm bedwars ac + byfron = 70
+       Default = 50,
+       colour= Color3.fromRGB(2, 113, 72), -- W move
+       Increment = 1, -- a day later i learnt this means how much you move the slider :)
+       ValueName ="",
+       Callback = function(v)
+       lplr.Character.Humanoid.JumpPower = v
+       end
+   })
+   
+   -- now for the shit functions
+   
+   PC:AddButton({
+       Name = "Sit",
+       Callback = function()
+    lplr.Character.Humanoid.Sit = true
+          end    
+   })
+   
+   PC:AddButton({
+       Name = "Shit Fling",
+       Callback = function()
+   local power = 1000 -- adjust this value to change the fling power
+   local char = game.Players.LocalPlayer.Character
+   
+   local function fling()
+       local bv = Instance.new("BodyVelocity")
+       bv.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+       local xOffset = math.random(-10, 10) -- adjust the range of the random offsets as needed
+       local yOffset = math.random(-10, 10)
+       local zOffset = math.random(-10, 10)
+       bv.Velocity = (char.PrimaryPart.CFrame.LookVector + Vector3.new(xOffset, yOffset, zOffset)).unit * power
+       bv.Parent = char.PrimaryPart
+       wait(0.1)
+       bv:Destroy()
+   end
+   
+   local function rotate()
+       while true do
+           local x, y, z = math.random(-10, 10), math.random(-10, 10), math.random(-10, 10)
+           local rotation = CFrame.Angles(math.rad(x), math.rad(y), math.rad(z))
+           char:SetPrimaryPartCFrame(char.PrimaryPart.CFrame * rotation)
+           wait(0.1)
+       end
+   end
+   
+   spawn(fling)
+   spawn(rotate)   	
+   end    
+   })
+   
+   -- if ur FIXEDINTERNET LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+   
+   local Combat = Window:MakeTab({
+       Name = "Combat",
+       Icon = "rbxassetid://4483345998",
+       PremiumOnly = false
+   })
+   -- hmmmmm
+   
+   -- In case
+   local newUI = Instance.new("ScreenGui")
+   newUI.Parent = lplr.PlayerGui
+   newUI.Name = "NewUI"
+   
+   Combat:AddButton({
+       Name = "Unnamed Esp", -- I tried for 2 fucking hours AND NO FUCKING WORKING SO FUCK IT
+       Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua", true))()
+       end
+   })
+   
+   local T = Window:MakeTab({
+       Name = "Troll",
+       Icon = "rbxassetid://4483345998",
+       PremiumOnly = false
+   })
+   
+   T:AddButton({
+       Name = "Bk", -- I tried for 2 fucking hours AND NO FUCKING WORKING SO FUCK IT
+       Callback = function()
+   chat("ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻")
+       end
+   })
+   
+   T:AddButton({
+       Name = "OrbitRandom",
+       Callback = function()
+           if not orbitspeed or not orbitradius then -- check if variables are defined
+               return
+           end
+           local speed = orbitspeed
+           local radius = orbitradius
+           local eclipse = 1
+           local rotation = CFrame.Angles(0, 0, 0)
+   
+           local sin, cos = math.sin, math.cos
+           local rotspeed = math.pi * 2 / speed
+           eclipse = eclipse * radius
+           local runservice = game:GetService('RunService')
+   
+           local rot = 0
+   
+           ORBIT = runservice.Stepped:Connect(function(t, dt)
+               local randomPlayer = getRandomPlayer()
+               if randomPlayer and randomPlayer.Character then
+                   rot = rot + dt * rotspeed
+                   game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = rotation * CFrame.new(sin(rot) * eclipse, 0, cos(rot) * radius) + randomPlayer.Character.HumanoidRootPart.Position
+               else
+                   ORBIT:Disconnect()
+               end
+           end)
+       end
+   })
+   
+   
+   OrionLib:Init()
 
---[[
-chat("Anyone like byfron, I dont it tried stopping me")
---]]
-
--- i can make the player say anything now <:)
-
--- Hmmmmm, what should i call this 
--- maybe main NO NO lets do
-local PC = Window:MakeTab({
-	Name = "Player Config",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-
--- bro ima test rq (1/06/23 8:30pm AEST)
--- ay it works and i got a friend
-
-PC:AddButton({
-	Name = "rejoin!",
-	Callback = function()
-    game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, player)
-  	end    
-})
-
-PC:AddSlider({
-	Name = "Speed",
-	Min = 16,
-	Max = 25,
-	Default = 16,
-	Color = Color3.fromRGB(2, 113, 72), -- u can change the colour <:)
-	Increment = 1, -- huh?
-	ValueName = "",
-	Callback = function(Value)
-		lplr.Character.Humanoid.WalkSpeed = Value
-	end    
-})
-
--- Im so good at coding :) u dont even understand what this means *sigh*
--- Just noticed im not using vs code to write this code what im I? I know a dumbass
--- FR!!!!
-
-PC:AddSlider({
-    Name = "JumpPower", -- to make you jump higher :D
-    Min = 50,
-    Max = 70, --hmmmmmmmm bedwars ac + byfron = 70
-	Default = 50,
-	colour= Color3.fromRGB(2, 113, 72), -- W move
-	Increment = 1, -- a day later i learnt this means how much you move the slider :)
-	ValueName ="",
-	Callback = function(v)
-    lplr.Character.Humanoid.JumpPower = v
-	end
-})
-
--- now for the shit functions
-
-PC:AddButton({
-	Name = "Sit",
-	Callback = function()
- lplr.Character.Humanoid.Sit = true
-   	end    
-})
-
-PC:AddButton({
-	Name = "Shit Fling",
-	Callback = function()
-local power = 1000 -- adjust this value to change the fling power
-local char = game.Players.LocalPlayer.Character
-
-local function fling()
-    local bv = Instance.new("BodyVelocity")
-    bv.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
-    local xOffset = math.random(-10, 10) -- adjust the range of the random offsets as needed
-    local yOffset = math.random(-10, 10)
-    local zOffset = math.random(-10, 10)
-    bv.Velocity = (char.PrimaryPart.CFrame.LookVector + Vector3.new(xOffset, yOffset, zOffset)).unit * power
-    bv.Parent = char.PrimaryPart
-    wait(0.1)
-    bv:Destroy()
-end
-
-local function rotate()
-    while true do
-        local x, y, z = math.random(-10, 10), math.random(-10, 10), math.random(-10, 10)
-        local rotation = CFrame.Angles(math.rad(x), math.rad(y), math.rad(z))
-        char:SetPrimaryPartCFrame(char.PrimaryPart.CFrame * rotation)
-        wait(0.1)
-    end
-end
-
-spawn(fling)
-spawn(rotate)   	
-end    
-})
-
--- if ur FIXEDINTERNET LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
-
-local Combat = Window:MakeTab({
-	Name = "Combat",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
--- hmmmmm
-
--- In case
-local newUI = Instance.new("ScreenGui")
-newUI.Parent = lplr.PlayerGui
-newUI.Name = "NewUI"
-
-
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Combat:AddButton({
-    Name = "Unnamed Esp", -- I tried for 2 fucking hours AND NO FUCKING WORKING SO FUCK IT
-    Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua", true))()
-    end
-})
-
-local T = Window:MakeTab({
-	Name = "Troll",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-T:AddButton({
-    Name = "Bk", -- I tried for 2 fucking hours AND NO FUCKING WORKING SO FUCK IT
-    Callback = function()
-chat("ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻ׁ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻")
-    end
-})
-
-T:AddButton({
-    Name = "OrbitRandom",
-    Callback = function()
-        if not orbitspeed or not orbitradius then -- check if variables are defined
-            return
-        end
-        local speed = orbitspeed
-        local radius = orbitradius
-        local eclipse = 1
-        local rotation = CFrame.Angles(0, 0, 0)
-
-        local sin, cos = math.sin, math.cos
-        local rotspeed = math.pi * 2 / speed
-        eclipse = eclipse * radius
-        local runservice = game:GetService('RunService')
-
-        local rot = 0
-
-        ORBIT = runservice.Stepped:Connect(function(t, dt)
-            local randomPlayer = getRandomPlayer()
-            if randomPlayer and randomPlayer.Character then
-                rot = rot + dt * rotspeed
-                game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = rotation * CFrame.new(sin(rot) * eclipse, 0, cos(rot) * radius) + randomPlayer.Character.HumanoidRootPart.Position
-            else
-                ORBIT:Disconnect()
-            end
-        end)
-    end
-})
-
-
-OrionLib:Init()
+   chat("offically Loaded. Please enjoy your hacking experience. Made by Tropxz")
