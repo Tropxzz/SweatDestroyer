@@ -1,4 +1,0 @@
-   local orbitspeed = 0.1 -- define orbitspeed here
-   local orbitradius = 5 -- define orbitradius here
-   
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Universal", true))()
