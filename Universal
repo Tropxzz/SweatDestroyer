@@ -51,6 +51,8 @@ local function chat(message)
    local orbitradius = 5 -- define orbitradius here
    local ESPEnabled = false -- Set initial state to disabled
    local ORBIT
+   local orbitspeed = 0.1 -- define orbitspeed here
+   local orbitradius = 5 -- define orbitradius here
 
    -- ui library coz I was too lazy to make a ui 💀
    chat("Loading Library.")
@@ -388,11 +390,18 @@ unorbit()
     end
 })
 
-   local T = Window:MakeTab({
-       Name = "Troll",
+   local C = Window:MakeTab({
+       Name = "Credits",
        Icon = "rbxassetid://4483345998",
        PremiumOnly = false
    })
+   
+   C:AddLabel("Coding By tropxz")
+   C:AddLabel("all scripts in this scripthub IS MADE BY TROPXZ (ME)")
+   C:AddLabel("Ui library creator: ShelxWare (Orion)")
+   C:AddLabel("Please credit me if u use the scripts above")
+   C:AddLabel("If u have any bugs or Issues, Dm Tropxz#5665")   
+   
 
    OrionLib:Init()
 
