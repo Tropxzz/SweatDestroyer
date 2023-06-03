@@ -55,7 +55,7 @@ TextBox3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextBox3.Position = UDim2.new(0.179190755, 0, 0.204597712, 0)
 TextBox3.Size = UDim2.new(0, 200, 0, 50)
 TextBox3.Font = Enum.Font.SourceSans
-TextBox3.PlaceholderText = "Operator: *, /, +. -"
+TextBox3.PlaceholderText = "Operator: *, /, +. -, %"
 TextBox3.Text = ""
 TextBox3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox3.TextScaled = true
@@ -100,21 +100,21 @@ local function VRVQ_fake_script() -- Frame.DragScript
 	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
 	--Put this inside of your Frame and configure the speed if you would like.
 	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
-	
+
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
 	local dragToggle = nil
 	local dragSpeed = 0.25
 	local dragStart = nil
 	local startPos = nil
-	
+
 	local function updateInput(input)
 		local delta = input.Position - dragStart
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-	
+
 	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			dragToggle = true
@@ -127,7 +127,7 @@ local function VRVQ_fake_script() -- Frame.DragScript
 			end)
 		end
 	end)
-	
+
 	UIS.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			if dragToggle then
@@ -135,27 +135,26 @@ local function VRVQ_fake_script() -- Frame.DragScript
 			end
 		end
 	end)
-	
+
 end
 coroutine.wrap(VRVQ_fake_script)()
 local function NJCIKM_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	-- main code
-	
 	local num1Box = script.Parent.Frame.TextBox1 -- reference to the first number text box
 	local num2Box = script.Parent.Frame.TextBox -- reference to the second number text box
 	local operatorBox = script.Parent.Frame.TextBox3 -- reference to the operator text box
 	local resultLabel = script.Parent.Frame.TextLabel -- reference to the result text label
-	
+
 	-- main code
 	local function calculate()
 		local num1 = tonumber(num1Box.Text)
 		local num2 = tonumber(num2Box.Text)
 		local operator = operatorBox.Text
-	
+
 		local result -- declare a variable to hold the result
-	
+
 		if operator == "+" then
 			result = num1 + num2
 		elseif operator == "-" then
@@ -164,14 +163,17 @@ local function NJCIKM_fake_script() -- ScreenGui.LocalScript
 			result = num1 * num2
 		elseif operator == "/" then
 			result = num1 / num2
+		elseif operator == "%" then
+			result = num1 % num2 -- calculate the remainder using the modulus operator
 		else
 			resultLabel.Text = "Invalid operator"
 			return -- exit the function if the operator is invalid
 		end
-	
+
 		resultLabel.Text = "Result: " .. result -- display the result in the label
 	end
-	
+
 	script.Parent.Frame.TextButton.MouseButton1Click:Connect(calculate) -- bind the calculate function to the button click event
+
 end
 coroutine.wrap(NJCIKM_fake_script)()
