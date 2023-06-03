@@ -1,233 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 local verison = 0.01
 local Game = "Universal"
 
@@ -278,7 +49,9 @@ local function chat(message)
    local Mouse = lplr:GetMouse()
    local orbitspeed = 0.1 -- define orbitspeed here
    local orbitradius = 5 -- define orbitradius here
-   
+   local ESPEnabled = false -- Set initial state to disabled
+   local ORBIT
+
    -- ui library coz I was too lazy to make a ui 💀
    chat("Loading Library.")
    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
@@ -333,6 +106,39 @@ local function chat(message)
    end
    
    local randomPlayer = getRandomPlayer()
+
+   local function ShowESP()
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        -- Create an ESP object for each player and adjust its properties
+        local esp = Instance.new("BoxHandleAdornment")
+        esp.Adornee = player.Character:FindFirstChild("HumanoidRootPart")
+        esp.Size = esp.Adornee.Size
+        esp.Color3 = Color3.fromRGB(255, 0, 0) -- Choose your desired color
+        esp.Transparency = 0.5 -- Choose your desired transparency
+        esp.ZIndex = 5
+        esp.AlwaysOnTop = true
+        esp.Visible = true
+        esp.Parent = esp.Adornee
+    end
+end
+
+local function DisableESP()
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        -- Find and remove the ESP object from each player
+        local esp = player.Character.HumanoidRootPart:FindFirstChild("BoxHandleAdornment")
+        if esp then
+            esp:Destroy()
+        end
+    end
+end
+
+local function unorbit()
+    if ORBIT then
+        ORBIT:Disconnect()
+        ORBIT = nil
+    end
+end
+
    
    --[[
    chat("Anyone like byfron, I dont it tried stopping me")
@@ -444,12 +250,18 @@ local function chat(message)
    newUI.Parent = lplr.PlayerGui
    newUI.Name = "NewUI"
    
-   Combat:AddButton({
-       Name = "Unnamed Esp", -- I tried for 2 fucking hours AND NO FUCKING WORKING SO FUCK IT
-       Callback = function()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua", true))()
-       end
-   })
+   Combat:AddToggle({
+    Name = "ESP",
+    default = false,
+    Callback = function()
+        ESPEnabled = not ESPEnabled -- Toggle state
+        if not ESPEnabled then
+            ShowESP() -- Show ESP on all players
+        else
+            DisableESP() -- Disable ESP on all players
+        end
+    end
+})
    
    local T = Window:MakeTab({
        Name = "Troll",
@@ -531,10 +343,57 @@ end
 
     end
 })
-
-
-
    
+T:AddTextbox({
+    Name = "Orbit: ",
+    Default = "",
+    TextDisappear = true,
+    Callback = function(Value)
+        local player = game.Players:FindFirstChild(Value)
+        if not player or not player.Character then
+            return
+        end
+
+        if not orbitspeed or not orbitradius then -- check if variables are defined
+            return
+        end
+
+        local speed = orbitspeed
+        local radius = orbitradius
+        local eclipse = 1
+        local rotation = CFrame.Angles(0, 0, 0)
+
+        local sin, cos = math.sin, math.cos
+        local rotspeed = math.pi * 2 / speed
+        eclipse = eclipse * radius
+        local runservice = game:GetService('RunService')
+
+        local rot = 0
+
+        ORBIT = runservice.Stepped:Connect(function(t, dt)
+            if player.Character then
+                rot = rot + dt * rotspeed
+                game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = rotation * CFrame.new(sin(rot) * eclipse, 0, cos(rot) * radius) + player.Character.HumanoidRootPart.Position
+            else
+                ORBIT:Disconnect()
+            end
+        end)
+    end	  
+})
+
+T:AddButton({
+    Name="UnOrbit",
+    Callback = function(Value)
+unorbit()
+    end
+})
+
+   local T = Window:MakeTab({
+       Name = "Troll",
+       Icon = "rbxassetid://4483345998",
+       PremiumOnly = false
+   })
+
    OrionLib:Init()
 
    chat("offically Loaded. Please enjoy your hacking experience. Made by Tropxz")
