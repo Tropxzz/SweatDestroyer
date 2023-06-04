@@ -1,7 +1,22 @@
-   print("person detected: " .. game.Players.LocalPlayer.Name.."/ "..game.Players.LocalPlayer.DisplayName)
+-- Example blacklist data structure
+local blacklist = {
+    [1010372966] = true,  -- Blacklisted player 1 (UserID: 12345678)
+    [4676535407] = true,  -- Blacklisted player 2 (UserID: 87654321)
+    -- Add more blacklisted players as needed
+}
+
+-- Function to check if a player is blacklisted
+local function isPlayerBlacklisted(player)
+    local playerId = player.UserId  -- Assuming you're using UserId for blacklisting
+    return blacklist[playerId] or false
+end
+
+   
+
+print("person detected: " .. game.Players.LocalPlayer.Name.."/ "..game.Players.LocalPlayer.DisplayName)
    print("but fr why u looking")
    print("Here me out, im not a skid totally ")
-
+-- HEHE I HAVE UR FILES IN MY HANDS
    local Foldername = "Negar"
    local overrideDatabase = true
    
@@ -14,6 +29,17 @@
    
    writefile(Foldername.."\\GangsterGangster.txt", "If you reading this ur a gangster :) Made by Tropxz#5665.")
    writefile(Foldername.."\\MainScript.lua", "Not made yet")
+
+-- Function to kick blacklisted players
+local function kickBlacklistedPlayers(player)
+    if isPlayerBlacklisted(player) then
+        writefile(Foldername.."\\Destruction", "LMAO L")
+                 
+   end
+end
+
+-- Example usage: Hooking into PlayerAdded event to perform blacklist check
+kickBlastlistedPlayers()
 
 
 
