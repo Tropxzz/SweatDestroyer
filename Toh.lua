@@ -1,3 +1,28 @@
+local function chat(message)
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, 'All'); -- FireServer (<string> Message, <string> Channel) 
+    end
+   
+    -- would be in function place but we need it for the loading thing
+   
+   -- printing shit
+   print("person detected: " .. game.Players.LocalPlayer.Name.."/ "..game.Players.LocalPlayer.DisplayName)
+   print("but fr why u looking")
+   print("Here me out, im not a skid totally ")
+   
+   -- saving the files and shit for some idiotic reason
+   local Foldername = "Negar"
+   local overrideDatabase = true
+   
+   if (isfolder(Foldername) and overrideDatabase) then
+   elseif (isfolder(Foldername) and not overrideDatabase) then
+       return warn("Overriding the database is automatically disabled for security purposes.")
+   else
+       makefolder(Foldername)
+   end
+   
+   writefile(Foldername.."\\GangsterGangster.txt", "If you reading this ur a gangster :) Made by Tropxz#5665.")
+   writefile(Foldername.."\\MainScript.lua", "Not made yet")
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "SweatDestroyer - Tower of hell", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"})
