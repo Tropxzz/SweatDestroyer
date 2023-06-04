@@ -9,3 +9,8 @@ Ninja Legends
 Prison Life
 TExting simulator
 Build a boat for treasure
+Tapping legends X
+
+# e
+Dm for bugs
+Dm for what game i should add :)
