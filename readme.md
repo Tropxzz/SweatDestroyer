@@ -14,3 +14,5 @@ Tapping legends X
 # e
 Dm for bugs
 Dm for what game i should add :)
+
+# You do not wanna be on my bad side :)
