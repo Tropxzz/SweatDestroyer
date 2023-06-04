@@ -342,23 +342,6 @@ local function chat(message)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, 'All'); -- FireServer (<string> Message, <string> Channel) 
     end
 
-   print("person detected: " .. game.Players.LocalPlayer.Name.."/ "..game.Players.LocalPlayer.DisplayName)
-   print("but fr why u looking")
-   print("Here me out, im not a skid totally ")
-
-   local Foldername = "Negar"
-   local overrideDatabase = true
-   
-   if (isfolder(Foldername) and overrideDatabase) then
-   elseif (isfolder(Foldername) and not overrideDatabase) then
-       return warn("Overriding the database is automatically disabled for security purposes.")
-   else
-       makefolder(Foldername)
-   end
-   
-   writefile(Foldername.."\\GangsterGangster.txt", "If you reading this ur a gangster :) Made by Tropxz#5665.")
-   writefile(Foldername.."\\MainScript.lua", "Not made yet")
-
    for i,v in pairs(getgc(true)) do
     if typeof(v) == "table" and rawget(v, "kick") then
         v.kick =  function()
