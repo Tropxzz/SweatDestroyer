@@ -6,9 +6,6 @@ local blacklist = {
     -- Add more blacklisted players as needed
 }
 
-
-   
-
 print("person detected: " .. game.Players.LocalPlayer.Name.."/ "..game.Players.LocalPlayer.DisplayName)
    print("but fr why u looking")
    print("Here me out, im not a skid totally ")
@@ -61,9 +58,9 @@ elseif game.PlaceId ==155615604 then -- Prison life
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Toh.lua", true))()
    elseif game.PlaceId == 4282985734 then -- Combat warriors
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/CombatWarriors.lua", true))()
-    elseif game.PlaceId == 537413528 then
+    elseif game.PlaceId == 537413528 then -- BABFT
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/BABFT.lua", true))()
-    elseif game.PlaceId ~= 155615604 or 2580982329 or 3956818381 or 1962086868 or 4282985734 then -- Universal
+    elseif game.PlaceId ~= 155615604 or 2580982329 or 3956818381 or 1962086868 or 4282985734 or 537413528 then -- Universal
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Universal", true))()
 end
 
