@@ -1,6 +1,35 @@
 -- We're here coding once again.....................
 -- Tip when coding: ONLY MAKE THE UNIVERSAL SCRIPT FIRST
 
+local function chat(message)
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, 'All'); -- FireServer (<string> Message, <string> Channel) 
+    end
+   
+    -- would be in function place but we need it for the loading thing
+   
+   -- printing shit
+   print("person detected: " .. game.Players.LocalPlayer.Name.."/ "..game.Players.LocalPlayer.DisplayName)
+   print("but fr why u looking")
+   print("Here me out, im not a skid totally ")
+   
+   -- saving the files and shit for some idiotic reason
+
+   chat("Making files.")
+   local Foldername = "Negar"
+   local overrideDatabase = true
+   
+   if (isfolder(Foldername) and overrideDatabase) then
+   elseif (isfolder(Foldername) and not overrideDatabase) then
+       return warn("Overriding the database is automatically disabled for security purposes.")
+   else
+       makefolder(Foldername)
+   end
+   
+   writefile(Foldername.."\\GangsterGangster.txt", "If you reading this ur a gangster :) Made by Tropxz#5665.")
+   writefile(Foldername.."\\MainScript.lua", "Not made yet")
+
+
+
 local Prison_ITEMS = game:GetService('Workspace')["Prison_ITEMS"].single
 local tigger = {
     "Remington 870",
