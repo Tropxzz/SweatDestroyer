@@ -14,19 +14,6 @@ local function chat(message)
    
    -- saving the files and shit for some idiotic reason
 
-   chat("Making files.")
-   local Foldername = "Negar"
-   local overrideDatabase = true
-   
-   if (isfolder(Foldername) and overrideDatabase) then
-   elseif (isfolder(Foldername) and not overrideDatabase) then
-       return warn("Overriding the database is automatically disabled for security purposes.")
-   else
-       makefolder(Foldername)
-   end
-   
-   writefile(Foldername.."\\GangsterGangster.txt", "If you reading this ur a gangster :) Made by Tropxz#5665.")
-   writefile(Foldername.."\\MainScript.lua", "Not made yet")
 
 
 
