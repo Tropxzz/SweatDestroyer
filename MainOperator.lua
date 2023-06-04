@@ -6,6 +6,8 @@ elseif game.PlaceId ==155615604 then -- Prison life
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/prisonlife.lua", true))()
     elseif game.PlaceId ==1962086868 then -- Toh
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Toh.lua", true))()
-    elseif game.PlaceId ~= 155615604 or 2580982329 or 3956818381 or 1962086868 then -- Universal
+   elseif game.PlaceId == 4282985734 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/CombatWarriors.lua", true))()
+    elseif game.PlaceId ~= 155615604 or 2580982329 or 3956818381 or 1962086868 or 4282985734 then -- Universal
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Universal", true))()
 end
