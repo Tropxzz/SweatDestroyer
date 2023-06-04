@@ -60,8 +60,12 @@ elseif game.PlaceId ==155615604 then -- Prison life
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/CombatWarriors.lua", true))()
     elseif game.PlaceId == 537413528 then -- BABFT
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/BABFT.lua", true))()
-    elseif game.PlaceId ~= 155615604 or 2580982329 or 3956818381 or 1962086868 or 4282985734 or 537413528 then -- Universal
+    elseif game.PlaceId == 8750997647 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Tappinglegendsx.lua"))()
+    elseif game.PlaceId ~= 155615604 or 2580982329 or 3956818381 or 1962086868 or 4282985734 or 537413528 or 8750997647 then -- Universal
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Universal", true))()
+    
+    
 end
 
 -- W or L
