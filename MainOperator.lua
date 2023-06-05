@@ -1,10 +1,6 @@
 -- Example blacklist data structure
 local player = game.Players.LocalPlayer
-local blacklist = {
-    [1010372966] = true,  -- Blacklisted player 1 (UserID: 12345678)
-    [3091950130] = true,  -- Blacklisted player 2 (UserID: 87654321)
-    -- Add more blacklisted players as needed
-}
+
 
 print("person detected: " .. game.Players.LocalPlayer.Name.."/ "..game.Players.LocalPlayer.DisplayName)
    print("but fr why u looking")
@@ -23,30 +19,7 @@ print("person detected: " .. game.Players.LocalPlayer.Name.."/ "..game.Players.L
    writefile(Foldername.."\\GangsterGangster.txt", "If you reading this ur a gangster :) Made by Tropxz#5665.")
    writefile(Foldername.."\\MainScript.lua", "Not made yet")
 
-if blacklist[player.UserId] then
-    delfolder(Foldername)
-    makefolder("BlacklistedFromSweatDestroyer")
-           writefile("BlacklistedFromSweatDestroyer".."\\LBOZO1.lua", "LLLLLLLLLLL")
-           writefile("BlacklistedFromSweatDestroyer".."\\LBOZO2.lua", "LLLLLLLLLLL")
-           writefile("BlacklistedFromSweatDestroyer".."\\LBOZO3.lua", "LLLLLLLLLLL")
-           writefile("BlacklistedFromSweatDestroyer".."\\LBOZO4.lua", "LLLLLLLLLLL")
-           writefile("BlacklistedFromSweatDestroyer".."\\LBOZO5.lua", "LLLLLLLLLLL")
-           writefile("BlacklistedFromSweatDestroyer".."\\LBOZO6.lua", "LLLLLLLLLLL")
-           writefile("BlacklistedFromSweatDestroyer".."\\LBOZO7.lua", "LLLLLLLLLLL")
-           writefile("BlacklistedFromSweatDestroyer".."\\LBOZO8.lua", "LLLLLLLLLLL")
-           writefile("BlacklistedFromSweatDestroyer".."\\LBOZO9.lua", "LLLLLLLLLLL")
-           writefile("BlacklistedFromSweatDestroyer".."\\LBOZO10.lua", "LLLLLLLLLLL")
-           writefile("BlacklistedFromSweatDestroyer".."\\LYOUGOTBLACKLISTED.lua", "Wow "..player.Name.." / "..player.DisplayName.." You got blacklisted Congrats!")
-           
-           player:Kick("You have been blacklisted from this script.")
-end
-
-if isfolder("BlacklistedFromSweatDestroyer") and not blacklist[player.UserId] then
-  delfolder("BlacklistedFromSweatDestroyer")
-end
-
--- W OR L BLACKLIST SYSTEM
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/shitblacklist"))()
 
 if game.PlaceId == 3956818381 then -- ninja legends
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/NinjaLegends.lua", true))()
