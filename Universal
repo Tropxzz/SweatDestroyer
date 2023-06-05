@@ -23,6 +23,7 @@ local function chat(message)
    -- varibles
    chat("Varible loading.")
    local playersService = game:GetService("Players")
+   local player = game.Players.LocalPlayer
    local textService = game:GetService("TextService")
    local lightingService = game:GetService("Lighting")
    local textChatService = game:GetService("TextChatService")
@@ -377,6 +378,150 @@ T:AddButton({
 unorbit()
     end
 })
+
+   local SL = Window:MakeTab({
+       Name = "Song lyric",
+       Icon = "rbxassetid://4483345998",
+       PremiumOnly = false
+   })
+
+SL:AddButton({
+    Name="South park Intro",
+    Callback = function()
+     chat("Im going down to south park gonna have myself a time")
+     wait(1)
+     chat("Friendly faces everywhere, Humble folks without temptation")
+     wait(1)
+     chat("I'm going down to South Park Gonna leave my woes behind")
+     wait(1)
+     chat("Ample parking day or night People spouting Howdy neighbor!")
+     wait(1)
+     chat("Heading on up to South Park, Gonna see if I can't unwind")
+     wait(1)
+     chat("*kenny mumbling* (if you know you know)")
+     wait(1)
+     chat("So come on down to South Park, And meet some friends of mine")
+    end
+})
+
+SL:AddButton({
+    Name="Soft boy - Tom cardy",
+    Callback = function()
+     chat("Band Shirt, not ones you've heard before")
+     wait(2)
+     chat("im al-ternative to my core")
+     wait(2)
+     chat("E-mo-tion-al around the girls")
+     wait(2)
+     chat"They'd like to do (the thing) with me"
+     wait(2)
+     chat("Hey girl, wrote you some poetry")
+     wait(2)
+     chat("Im di-fferent to society")
+     wait(2)
+     chat("im woke, politically correct")
+     wait(2)
+     chat("My insta bio says fem ")
+     wait(2)
+     chat("so your a smart girl")
+     wait(2)
+     chat("had a broken heart girl")
+     wait(2)
+      chat("supports creative arts girl")
+     wait(2)
+      chat("do you read descartes girl")
+     wait(2)
+     chat("theres more im just lazy")
+    end
+})
+
+SL:AddButton({
+    Name="Black magic - Eminem",
+    Callback = function()
+     chat(" Black magic, night walker (yeah)")
+     wait(2)
+     chat("She haunts me like no other (feel like)")
+     wait(2)
+     chat("Nobody told me (I don't know) love is pain, oh (I know we just met)")
+     wait(2)
+     chat"Black magic, dark water (but it's like)"
+     wait(2)
+     chat("Surrounds me like no other (it's like I know you better than anyone)")
+     wait(2)
+     chat("She's got my heart in chains")
+     wait(2)
+     chat("We're volatile, I can't call it, though")
+     wait(2)
+     chat("It's like too large a peg, and too small a hole (yeah)")
+     wait(2)
+     chat("But she cheats and I catch her like the common cold (sneeze)")
+     wait(2)
+     chat("Last time I broke her collar bone, she's intolerable (yeah)")
+     wait(2)
+      chat("We're an unlikely pair (yeah)")
+     wait(2)
+      chat("Like two different Nike Airs")
+     wait(2)
+     chat("So I think we're soulmates though (yeah)")
+     wait(2)
+     chat("People don't like us together but like we care (not me, not me)")
+     wait(2)
+     chat("Yeah, but God strike me dead (yeah)")
+     wait(2)
+     chat("She knows that I would walk over hot coals for her with both of my feet bare (yeah))")
+     wait(2)
+     chat("But soon as I asked to hit (asked to hit), it's like she grabs a switch (grabs a switch)")
+        wait(2)
+     chat("Turns me over her knee, 'cause my upper legs is whipped")
+          wait(2)
+     chat("Yeah, and I got her back, but I'm spineless (yeah)")
+          wait(2)
+     chat("So when she stabs me in mine (yeah), it's like I just can't feel the knife (what)")
+    end
+})
+
+SL:AddButton({
+    Name="corn - Simecicle",
+    Callback = function()
+     chat("From the earth I rise from the earth I one day will return")
+     wait(2)
+     chat("wsp mother shuckers")
+     wait(2)
+     chat("My name is Colonel cornelius cornwall")
+     wait(2)
+     chat"and im here today to introduce you to CORN!"
+     wait(2)
+     chat("corn is a north american cerial plant that heals corkials called fuad its also called maze")
+     wait(2)
+     chat("because its easy to get lost in its incredable flavour")
+     wait(2)
+     chat("sideeffects of corn inculde chocking, I guess?")
+     wait(2)
+     chat("Come down today and try some corn or we will sacrifice your newborn ")
+     wait(2)
+     chat("AHHHHHHHHHHHHHH")
+    end
+})
+
+SL:AddTextbox({
+    Name = "Textbox",
+    Default = "Enter song name",
+    TextDisappear = true,
+    Callback = function(Value)
+        local url = "https://lyrist.vercel.app/api/" .. Value
+        local http = game:GetService("HttpService")
+        local response = http:GetAsync(url)
+
+        if response ~= "Lyrics not found" then
+            -- Replace 'chat' with your existing chat function
+            chat(response)
+        else
+            -- Replace 'chat' with your existing chat function
+            chat("Lyrics not found")
+        end
+    end
+})
+
 
    local C = Window:MakeTab({
        Name = "Credits",
