@@ -1,5 +1,6 @@
 -- Isaiah if I show this to you ur gay. Cant take it back btw :)
 local Foldername = "Negar"
+local player = game.Players.LocalPlayer
 
 local blacklist = {
     [1010372966] = true,  -- Blacklisted player 1 (UserID: 12345678)
