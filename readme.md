@@ -1,6 +1,8 @@
 # Knowledgement
 Some game scripts dont have that many scripts because there isnt important game features
 All the scripts are made by me please do not steal
+-------------------------------------------------------
+Also some of my other scripts will/might have sweatdestroyer assets.
 
 # games
 Combat Warriors
