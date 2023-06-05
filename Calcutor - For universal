@@ -3,177 +3,271 @@
 
 -- Instances:
 
--- MADE FOR SWEAT DESTROYER
-
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextBox1 = Instance.new("TextBox")
-local TextBox = Instance.new("TextBox")
-local TextBox3 = Instance.new("TextBox")
-local TextButton = Instance.new("TextButton")
+local Calucator = Instance.new("ScreenGui")
+local One = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
-local wqeqwe = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local ImageButton = Instance.new("ImageButton")
+local Two = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextBox_2 = Instance.new("TextBox")
+local TextButton_2 = Instance.new("TextButton")
+local Operator = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextBox_3 = Instance.new("TextBox")
+local TextButton_3 = Instance.new("TextButton")
+local A = Instance.new("TextLabel")
+local SUCKMYDICk = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Calucator.Name = "Calucator"
+Calucator.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Calucator.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.Position = UDim2.new(0.220085472, 0, 0.0924276039, 0)
-Frame.Size = UDim2.new(0, 346, 0, 435)
+One.Name = "One"
+One.Parent = Calucator
+One.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+One.Position = UDim2.new(0.00693703676, 0, 0.679287314, 0)
+One.Size = UDim2.new(0, 385, 0, 279)
 
-TextBox1.Name = "TextBox1"
-TextBox1.Parent = Frame
-TextBox1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox1.Position = UDim2.new(0.179190755, 0, 0.0620689616, 0)
-TextBox1.Size = UDim2.new(0, 200, 0, 50)
-TextBox1.Font = Enum.Font.SourceSans
-TextBox1.PlaceholderText = "First number"
-TextBox1.Text = ""
-TextBox1.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox1.TextScaled = true
-TextBox1.TextSize = 14.000
-TextBox1.TextWrapped = true
+UICorner.Parent = One
 
-TextBox.Parent = Frame
+TextLabel.Parent = One
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.0250896029, 0)
+TextLabel.Size = UDim2.new(0, 386, 0, 50)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Please enter your first number"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextBox.Parent = One
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.Position = UDim2.new(0.179190755, 0, 0.342528731, 0)
+TextBox.BackgroundTransparency = 1.000
+TextBox.Position = UDim2.new(0.215584412, 0, 0.279569894, 0)
 TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.ClearTextOnFocus = false
 TextBox.Font = Enum.Font.SourceSans
-TextBox.PlaceholderText = "Second Number"
+TextBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox.PlaceholderText = "Here."
 TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.TextScaled = true
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
 
-TextBox3.Name = "TextBox3"
-TextBox3.Parent = Frame
-TextBox3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox3.Position = UDim2.new(0.179190755, 0, 0.204597712, 0)
-TextBox3.Size = UDim2.new(0, 200, 0, 50)
-TextBox3.Font = Enum.Font.SourceSans
-TextBox3.PlaceholderText = "Operator: *, /, +. -, %"
-TextBox3.Text = ""
-TextBox3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox3.TextScaled = true
-TextBox3.TextSize = 14.000
-TextBox3.TextWrapped = true
-
-TextButton.Parent = Frame
+TextButton.Parent = One
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.Position = UDim2.new(0.179190755, 0, 0.508045971, 0)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.238961041, 0, 0.512544811, 0)
 TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.SourceSans
+TextButton.Font = Enum.Font.Gotham
 TextButton.Text = "Submit"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
 TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.Position = UDim2.new(0.179190755, 0, 0.668965518, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Answer: "
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
+ImageButton.Parent = One
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ImageButton.Position = UDim2.new(0, 0, 0.763440847, 0)
+ImageButton.Size = UDim2.new(0, 62, 0, 66)
+ImageButton.Image = "rbxassetid://13056312518"
 
-wqeqwe.Name = "wqeqwe"
-wqeqwe.Parent = Frame
-wqeqwe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-wqeqwe.Position = UDim2.new(0, 0, 0.885057449, 0)
-wqeqwe.Size = UDim2.new(0, 200, 0, 50)
-wqeqwe.Font = Enum.Font.SourceSans
-wqeqwe.Text = "Made for SweatDestroyer. By Tropxz#5665 If in other script fuck them"
-wqeqwe.TextColor3 = Color3.fromRGB(0, 0, 0)
-wqeqwe.TextScaled = true
-wqeqwe.TextSize = 14.000
-wqeqwe.TextWrapped = true
+Two.Name = "Two"
+Two.Parent = Calucator
+Two.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Two.Position = UDim2.new(0.00780358771, 0, 0.679287314, 0)
+Two.Size = UDim2.new(0, 385, 0, 279)
+Two.Visible = false
+
+UICorner_2.Parent = Two
+
+TextLabel_2.Parent = Two
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0103896102, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 381, 0, 50)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Please enter your Second number"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextBox_2.Parent = Two
+TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.BackgroundTransparency = 1.000
+TextBox_2.Position = UDim2.new(0.215584412, 0, 0.279569894, 0)
+TextBox_2.Size = UDim2.new(0, 200, 0, 50)
+TextBox_2.ClearTextOnFocus = false
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox_2.PlaceholderText = "Here."
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 14.000
+TextBox_2.TextWrapped = true
+
+TextButton_2.Parent = Two
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Position = UDim2.new(0.238961041, 0, 0.512544811, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.Gotham
+TextButton_2.Text = "Submit"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+Operator.Name = "Operator"
+Operator.Parent = Calucator
+Operator.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Operator.Position = UDim2.new(0.00780358771, 0, 0.679287314, 0)
+Operator.Size = UDim2.new(0, 385, 0, 279)
+Operator.Visible = false
+
+UICorner_3.Parent = Operator
+
+TextLabel_3.Parent = Operator
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0103896102, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 381, 0, 50)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Please enter your Operator"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextBox_3.Parent = Operator
+TextBox_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_3.BackgroundTransparency = 1.000
+TextBox_3.Position = UDim2.new(0.215584412, 0, 0.279569894, 0)
+TextBox_3.Size = UDim2.new(0, 200, 0, 50)
+TextBox_3.ClearTextOnFocus = false
+TextBox_3.Font = Enum.Font.SourceSans
+TextBox_3.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox_3.PlaceholderText = "/, *, +, -"
+TextBox_3.Text = ""
+TextBox_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_3.TextScaled = true
+TextBox_3.TextSize = 14.000
+TextBox_3.TextWrapped = true
+
+TextButton_3.Parent = Operator
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.Position = UDim2.new(-0.0493506491, 0, 0.820788503, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.Gotham
+TextButton_3.Text = "Restart"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+A.Name = "A"
+A.Parent = Operator
+A.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+A.BackgroundTransparency = 1.000
+A.Position = UDim2.new(0.0103896102, 0, 0.526881695, 0)
+A.Size = UDim2.new(0, 381, 0, 50)
+A.Font = Enum.Font.GothamBold
+A.Text = "Ans"
+A.TextColor3 = Color3.fromRGB(255, 255, 255)
+A.TextScaled = true
+A.TextSize = 14.000
+A.TextWrapped = true
+
+SUCKMYDICk.Name = "SUCKMYDICk!"
+SUCKMYDICk.Parent = Operator
+SUCKMYDICk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SUCKMYDICk.BackgroundTransparency = 1.000
+SUCKMYDICk.Position = UDim2.new(0.480519503, 0, 0.820788503, 0)
+SUCKMYDICk.Size = UDim2.new(0, 200, 0, 50)
+SUCKMYDICk.Font = Enum.Font.Gotham
+SUCKMYDICk.Text = "Sumbit"
+SUCKMYDICk.TextColor3 = Color3.fromRGB(255, 255, 255)
+SUCKMYDICk.TextScaled = true
+SUCKMYDICk.TextSize = 14.000
+SUCKMYDICk.TextWrapped = true
 
 -- Scripts:
 
-local function VRVQ_fake_script() -- Frame.DragScript 
-	local script = Instance.new('LocalScript', Frame)
+local function XCNPSO_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
 
-	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
-	--Put this inside of your Frame and configure the speed if you would like.
-	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
-
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.25
-	local dragStart = nil
-	local startPos = nil
-
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Calucator:Destroy()
 	end)
-
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
-
 end
-coroutine.wrap(VRVQ_fake_script)()
-local function NJCIKM_fake_script() -- ScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', ScreenGui)
+coroutine.wrap(XCNPSO_fake_script)()
+local function LDHI_fake_script() -- Calucator.LocalScript 
+	local script = Instance.new('LocalScript', Calucator)
 
-	-- main code
-	local num1Box = script.Parent.Frame.TextBox1 -- reference to the first number text box
-	local num2Box = script.Parent.Frame.TextBox -- reference to the second number text box
-	local operatorBox = script.Parent.Frame.TextBox3 -- reference to the operator text box
-	local resultLabel = script.Parent.Frame.TextLabel -- reference to the result text label
-
-	-- main code
+	local one = script.Parent.One
+	local two = script.Parent.Two
+	local operator = script.Parent.Operator
+	
+	one.TextButton.MouseButton1Click:Connect(function()
+		one.Visible = false
+		two.Visible = true
+	end)
+	
+	two.TextButton.MouseButton1Click:Connect(function()
+		two.Visible = false
+		operator.Visible = true
+	end)
+	
+	operator.TextButton.MouseButton1Click:Connect(function()
+		operator.Visible = false
+		one.Visible = true
+		one.TextBox.Text = ""
+		two.TextBox.Text = ""
+		operator.TextBox.Text = ""
+	end)
+	
 	local function calculate()
-		local num1 = tonumber(num1Box.Text)
-		local num2 = tonumber(num2Box.Text)
-		local operator = operatorBox.Text
-
+		local num1 = tonumber(one.TextBox.Text)
+		local num2 = tonumber(two.TextBox.Text)
+		local operator1 = operator.TextBox.Text
+		local resultLabel = operator.A
+	
 		local result -- declare a variable to hold the result
-
-		if operator == "+" then
+	
+		if operator1 == "+" then
 			result = num1 + num2
-		elseif operator == "-" then
+		elseif operator1 == "-" then
 			result = num1 - num2
-		elseif operator == "*" then
+		elseif operator1 == "*" then
 			result = num1 * num2
-		elseif operator == "/" then
+		elseif operator1 == "/" then
 			result = num1 / num2
-		elseif operator == "%" then
+		elseif operator1 == "%" then
 			result = num1 % num2 -- calculate the remainder using the modulus operator
 		else
 			resultLabel.Text = "Invalid operator"
 			return -- exit the function if the operator is invalid
 		end
-
+	
 		resultLabel.Text = "Result: " .. result -- display the result in the label
 	end
-
-	script.Parent.Frame.TextButton.MouseButton1Click:Connect(calculate) -- bind the calculate function to the button click event
-
+	
+	operator["SUCKMYDICk!"].MouseButton1Click:Connect(calculate) -- bind the calculate function to the button click event
+	
 end
-coroutine.wrap(NJCIKM_fake_script)()
+coroutine.wrap(LDHI_fake_script)()
