@@ -140,6 +140,13 @@ end
 
 })
 
+Tab:AddButton({
+    Name = "Admin panel (LMAFO TOH IS RETARDED)",
+    Callback = function()
+     game.Players.LocalPlayer.PlayerGui.admin.Enabled = true
+    end
+})
+
 
    local C = Window:MakeTab({
        Name = "Credits",
