@@ -866,6 +866,19 @@ Tab:AddToggle({
     end
 })
 
+
+   local C = Window:MakeTab({
+       Name = "Credits",
+       Icon = "rbxassetid://4483345998",
+       PremiumOnly = false
+   })
+   
+   C:AddLabel("Coding By tropxz")
+   C:AddLabel("all scripts in this scripthub IS MADE BY TROPXZ (ME)")
+   C:AddLabel("Ui library creator: ShelxWare (Orion)")
+   C:AddLabel("Please credit me if u use the scripts above")
+   C:AddLabel("If u have any bugs or Issues, Dm Tropxz#5665") 
+
 print("Test work")
 
 -- when ur script crashes ur client :sob:
