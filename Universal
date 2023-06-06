@@ -503,6 +503,37 @@ SL:AddButton({
     end
 })
 
+SL:AddButton({
+    Name="Happy face - Jagwar Twin",
+    Callback = function()
+     chat("Hey, put on a happy face")
+     wait(2)
+     chat("Then everything's okay")
+     wait(2)
+     chat("Put on a happy face")
+     wait(2)
+     chat"Flip the switch, flip the stove"
+     wait(2)
+     chat("World gone mad, let's start the show")
+     wait(2)
+     chat("Get your kicks and let's go")
+     wait(2)
+     chat("If you're sad, don't let it show")
+     wait(2)
+     chat("Say I'm happy, I'm happy, I'm happy today")
+     wait(2)
+     chat("I'm happy, I'm happy, I'm happy today")
+     wait(2)
+     chat("They say put on a happy face")
+     wait(2)
+     chat("Cause we're tick-tock, tick-tock")
+     wait(2)
+     chat("Ticking like a timebomb")
+     wait(2)
+     chat("theres more btw")
+    end
+})
+
 SL:AddTextbox({
     Name = "Textbox",
     Default = "Enter song name",
