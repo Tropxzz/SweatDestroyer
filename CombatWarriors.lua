@@ -63,7 +63,8 @@ local words = {
     "Bro got fake Jordans 💀",
     "Caught in 4K",
     "Turi ip ip",
-    "Say goodbye to your Kneecaps"
+    "Say goodbye to your Kneecaps",
+    "Maybe get Sweatdestroyer and you will become better - Trops"
 }
 
 
@@ -153,6 +154,25 @@ pog = hookmetamethod(game, "__index", function(self, key)
     return pog(self, key)
 end)
 
+        if silentaim then
+            pcall(function()
+                local bow = Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
+                if closest then
+                    bruh.Adornee = getClosestToMouse().Character
+                end
+                if ARROW then
+                    if closest then
+                        if (ARROW.Position - closest.Character.HumanoidRootPart.Position).Magnitude <= 15 then
+                            firehit(closest.Character,ARROW)
+                            ARROW = nil
+                            shot = false
+                            print("Hitting user!")
+                        end
+                    end
+                end
+            end)
+        end
+
 
 local function getRemote(name)
     for i,v in pairs(remotes) do
@@ -161,6 +181,11 @@ local function getRemote(name)
         end
     end
 end
+Players.LocalPlayer.leaderstats.Score.Changed:Connect(function()
+    if killsay then
+        game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(words[math.random(1, #words)])
+    end
+end)
 
 -- took this from devforums
 local function getClosest()
@@ -337,7 +362,6 @@ pcall(function()
         wait()
     end
 end)
-
 local function chat(message)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, 'All'); -- FireServer (<string> Message, <string> Channel) 
     end
@@ -599,7 +623,7 @@ Tab:AddToggle({
         end
         	end    
 })
-
+ 
 Tab:AddToggle({
 	Name = "anti fire + beartrap damage",
 	Default = false,
@@ -767,105 +791,65 @@ Tab:AddToggle({
 })
 
 Tab:AddToggle({
-    Name = "Fling",
+    Name = "No recoil",
     Default = false,
     Callback = function(val)
-       local plr = game.Players.LocalPlayer
-        local oldHumanoid = plr.Character.Humanoid
-        local torso = game.Players.LocalPlayer.Character.HumanoidRootPart
-        local flying = true
-        local deb = true
-        local ctrl = {f = 0, b = 0, l = 0, r = 0}
-        local lastctrl = {f = 0, b = 0, l = 0, r = 0}
-        local maxspeed = 50
-        local speed = 50
-        
-        workspace.CurrentCamera.CameraSubject = torso
-         
-        local function Fly()
-             local bambam = Instance.new("BodyThrust")
-             bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
-             bambam.Force = Vector3.new(99999,0,99999)
-             bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
-             Instance.new("SelectionBox",game.Players.LocalPlayer.Character.HumanoidRootPart).Adornee = game.Players.LocalPlayer.Character.HumanoidRootPart
-             local bg = Instance.new("BodyGyro", torso)
-             bg.P = 9e4
-             bg.maxTorque = Vector3.new(0, 0, 0)
-             bg.cframe = torso.CFrame
-             local bv = Instance.new("BodyVelocity", torso)
-             bv.velocity = Vector3.new(0,0,0)
-             bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
-             repeat wait()
-                 if oldHumanoid:FindFirstChildOfClass'RemoteEvent' ~= nil then
-                     oldHumanoid.RagdollRemoteEvent:FireServer(true)
-                 end
-                 getRemote("UpdateIsCrouching"):FireServer(true)
-         
-                 if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
-                     speed = speed+.2
-                     if speed > maxspeed then
-                         speed = maxspeed
-                     end
-                 elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
-                     speed = speed-1
-                     if speed < 0 then
-                         speed = 0
-                     end
-                 end
-                 if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
-                     bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
-                     lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
-                 elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
-                     bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
-                 else
-                     bv.velocity = Vector3.new(0,0.1,0)
-                 end
-         
-             until not flying
-             ctrl = {f = 0, b = 0, l = 0, r = 0}
-             lastctrl = {f = 0, b = 0, l = 0, r = 0}
-             speed = 0
-             bg:Destroy()
-             bv:Destroy()
-         
-         end
-         mouse.KeyDown:connect(function(key)
-             if key:lower() == "w" then
-                 ctrl.f = 1
-             elseif key:lower() == "s" then
-                 ctrl.b = -1
-             elseif key:lower() == "a" then
-                 ctrl.l = -1
-             elseif key:lower() == "d" then
-                 ctrl.r = 1
-             end
-         end)
-         mouse.KeyUp:connect(function(key)
-             if key:lower() == "w" then
-                 ctrl.f = 0
-             elseif key:lower() == "s" then
-                 ctrl.b = 0
-             elseif key:lower() == "a" then
-                 ctrl.l = 0
-             elseif key:lower() == "d" then
-                 ctrl.r = 0
-             elseif key:lower() == "r" then
-         
-             end
-         end)
-         for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-             v:Destroy()
-         end -- doesnt need tools anyways
-         -- hides all of ur body parts expect torso (there is a chance it doesnt work)
-         wait(.1)
-         oldHumanoid.RagdollRemoteEvent:FireServer(true)
-         wait(.5)
-         coroutine.wrap(Fly)()
-         wait(.5)
-         game.Players.LocalPlayer.Character.HumanoidRootPart.RootJoint.Part0 = nil
+              for i,v2 in pairs(getgc(true)) do
+            if typeof(v2) == "table" and rawget(v2, "recoilAmount") then
+                if val then
+                    v2.recoilAmount = 0
+                    v2.recoilXMin = 0
+                    v2.recoilXMax = 0
+                    v2.recoilYMin = 0
+                    v2.recoilYMax = 0
+                    v2.recoilZMin = 0
+                    v2.recoilZMax = 0
+                else
+                    v2.recoilAmount = 35
+                    v2.recoilXMin = 1.25
+                    v2.recoilXMax = 1.75
+                    v2.recoilYMin = -1.5
+                    v2.recoilYMax = 1.5
+                    v2.recoilZMin = -1.5
+                    v2.recoilZMax = 1.5
+                end
+            end
+        end
     end
 })
 
+Tab:AddToggle({
+    Name = "No gravity",
+    Default = false,
+    Callback = function(val)
+        for i,v2 in pairs(getgc(true)) do
+            if typeof(v2) == "table" and rawget(v2, "recoilAmount") then
+                if val then
+                    v2.gravity = Vector3.new(0,0,0)
+                else
+                    v2.gravity = Vector3.new(0, -10, 0)
+                end
+            end
+        end
+    end
+})
+
+Tab:AddToggle({
+    Name = "killsay",
+    Default = false,
+    Callback = function(val)
+killsay = val
+    end
+})
+
+
+Tab:AddToggle({
+    Name = "Slientaim",
+    Default = false,
+    Callback = function(val)
+slientaim = val
+    end
+})
 
    local C = Window:MakeTab({
        Name = "Credits",
