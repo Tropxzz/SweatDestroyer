@@ -58,7 +58,7 @@ if game.PlaceId == 3956818381 then -- ninja legends
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/PhoneTextingsimulator.lua", true))()
 elseif game.PlaceId ==155615604 then -- Prison life
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/prisonlife.lua", true))()
-    elseif game.PlaceId ==1962086868 then -- Toh
+    elseif game.PlaceId ==1962086868 or 5253186791 then -- Toh and appeals
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Toh.lua", true))()
    elseif game.PlaceId == 4282985734 then -- Combat warriors
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/CombatWarriors.lua", true))()
@@ -68,7 +68,7 @@ elseif game.PlaceId ==155615604 then -- Prison life
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Tappinglegendsx.lua"))()
     elseif game.PlaceId == 11927193883 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Simple%20slap%20battles.lua"))()
-    elseif game.PlaceId ~= 155615604 or 2580982329 or 3956818381 or 1962086868 or 4282985734 or 537413528 or 8750997647 or 11927193883 then -- Universal
+    elseif game.PlaceId ~= 155615604 or 2580982329 or 3956818381 or 1962086868 or 4282985734 or 537413528 or 8750997647 or 5253186791 or 11927193883 then -- Universal
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Universal", true))()
     
     
