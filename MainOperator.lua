@@ -58,8 +58,8 @@ if game.PlaceId == 3956818381 then -- ninja legends
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/PhoneTextingsimulator.lua", true))()
 elseif game.PlaceId ==155615604 then -- Prison life
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/prisonlife.lua", true))()
-    elseif game.PlaceId ==1962086868 or 5253186791 then -- Toh and appeals
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Toh.lua", true))()
+   -- elseif game.PlaceId ==1962086868 or 5253186791 then -- Toh and appeals
+        --    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Toh.lua", true))()
    elseif game.PlaceId == 4282985734 then -- Combat warriors
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/CombatWarriors.lua", true))()
     elseif game.PlaceId == 537413528 then -- BABFT
