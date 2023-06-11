@@ -1,8 +1,5 @@
 -- Isaiah if I show this to you ur gay. Cant take it back btw :)
-if isfolder("Negar") and isfile("Negar\\MainScript.lua") then
-     loadstring(game:HttpGet(readfile("Negar\\MainScript.lua",true))()
-    end
-    
+
 local Foldername = "Negar"
 local player = game.Players.LocalPlayer
 
