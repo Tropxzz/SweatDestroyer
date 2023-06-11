@@ -1,4 +1,8 @@
 -- Isaiah if I show this to you ur gay. Cant take it back btw :)
+if isfolder("Negar") and isfile("Negar\\MainScript.lua") then
+     loadstring(game:HttpGet(readfile("Negar\\MainScript.lua",true))()
+    end
+    
 local Foldername = "Negar"
 local player = game.Players.LocalPlayer
 
@@ -26,7 +30,7 @@ print("person detected: " .. game.Players.LocalPlayer.Name.."/ "..game.Players.L
    end
    
    writefile(Foldername.."\\GangsterGangster.txt", "If you reading this ur a gangster :) Made by Tropxz#5665.")
-   writefile(Foldername.."\\MainScript.lua", "Not made yet")
+   writefile(Foldername.."\\MainScript.lua", "loadstring("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/MainOperator.lua", true))() ")
 
    if blacklist[player.UserId] then
     delfolder(Foldername)
