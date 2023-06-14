@@ -74,5 +74,3 @@ elseif game.PlaceId ==155615604 then -- Prison life
     
     
 end
-
--- W or L
