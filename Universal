@@ -310,6 +310,19 @@ Combat:AddToggle({
     end
 })
 
+Combat:AddToggle({
+    Name = "BHOP",
+    Default = false,
+    Callback = function(v)
+    getgenv().BHop = v
+     while getgenv().BHop do
+        if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end
+wait()
+end
+end
+})
 
 Combat:AddToggle({
     Name = "INVISIBLE (Only you can see btw)",
