@@ -22,4 +22,4 @@ Dm for what game i should add :)
 # You do not wanna be on my bad side :)
 
 # DMCA
-<a href="//www.dmca.com/Protection/Status.aspx?ID=e16abedc-bb28-49f7-b7d9-e6dbe98dd9ff" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=e16abedc-bb28-49f7-b7d9-e6dbe98dd9ff"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+<a href="//www.dmca.com/Protection/Status.aspx?ID=e16abedc-bb28-49f7-b7d9-e6dbe98dd9ff" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=e16abedc-bb28-49f7-b7d9-e6dbe98dd9ff"  alt="DMCA.com Protection Status" /></a>   <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
