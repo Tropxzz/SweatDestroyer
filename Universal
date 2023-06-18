@@ -53,6 +53,9 @@ local function chat(message)
    local Holding = false
    local Players = game:GetService("Players")
    local LocalPlayer = Players.LocalPlayer
+   local invisRunning
+
+   lplr.Character.HumanoidRootPart.Transparency = 1
 
    _G.AimbotEnabled = true
 _G.TeamCheck = false -- If set to true then the script would only lock your aim at enemy team members.
@@ -195,7 +198,7 @@ end
    PC:AddSlider({
        Name = "Speed",
        Min = 16,
-       Max = 25,
+       Max = 50,
        Default = 16,
        Color = Color3.fromRGB(2, 113, 72), -- u can change the colour <:)
        Increment = 1, -- huh?
@@ -212,7 +215,7 @@ end
    PC:AddSlider({
        Name = "JumpPower", -- to make you jump higher :D
        Min = 50,
-       Max = 70, --hmmmmmmmm bedwars ac + byfron = 70
+       Max = 200, --hmmmmmmmm
        Default = 50,
        colour= Color3.fromRGB(2, 113, 72), -- W move
        Increment = 1, -- a day later i learnt this means how much you move the slider :)
@@ -306,6 +309,37 @@ Combat:AddToggle({
         end
     end
 })
+
+
+Combat:AddToggle({
+    Name = "INVISIBLE (Only you can see btw)",
+    Default = false,
+    Callback = function(v)
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+
+        if character then
+            local parts = character:GetDescendants()
+
+            for _, part in ipairs(parts) do
+                if part:IsA("BasePart") then
+                    if v then
+                        -- Make part invisible
+                        part.Transparency = 1
+                        character.Head.face.Transparency = 1
+                    else
+                        -- Make part visible again
+                        part.Transparency = 0
+                         character.Head.face.Transparency = 0
+
+                    end
+                end
+            end
+        end
+    end
+})
+
+
 
 
    local T = Window:MakeTab({
