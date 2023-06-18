@@ -2,15 +2,9 @@
 -- Version: 3.2
 
 -- Instances:
-local MainLog = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/DiscordWebhooklogFunction", true))()
-
-local content = {
-    username = "Logger",
-    content = game.Players.LocalPlayer.Name.." Has executed Calucator"
-}
 
 
-sendDiscordWebhook(content)
+
 local Calucator = Instance.new("ScreenGui")
 local One = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
