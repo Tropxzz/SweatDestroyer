@@ -1330,4 +1330,2117 @@
 -- skid
 -- skid
 
-do local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function()return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...)local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30)if (v1(v30,2)==79) then v19=v0(v3(v30,1,1));return "";else local v81=0;local v82;while true do if (v81==0) then v82=v2(v0(v30,16));if v19 then local v95=0;local v96;while true do if (v95==1) then return v96;end if (v95==0) then v96=v5(v82,v19);v19=nil;v95=1;end end else return v82;end break;end end end end);local function v20(v31,v32,v33)if v33 then local v83=0 -0 ;local v84;while true do if (v83==((0 + 0) -0)) then v84=(v31/((3 -1)^(v32-1)))%(2^(((v33-(2 -1)) -(v32-1)) + (620 -(555 + 64)))) ;return v84-(v84%(932 -(857 + 74))) ;end end else local v85=(570 -(367 + 201))^(v32-(928 -((1091 -(282 + 595)) + 713))) ;return (((v31%(v85 + v85))>=v85) and (1 + 0)) or 0 ;end end local function v21()local v34=v1(v16,v18,v18);v18=v18 + 1 ;return v34;end local function v22()local v35,v36=v1(v16,v18,v18 + (1639 -(1523 + 114)) );v18=v18 + 2 + 0 ;return (v36 * (364 -108)) + v35 ;end local function v23()local v37=1065 -(68 + (2377 -1380)) ;local v38;local v39;local v40;local v41;while true do if (v37==1) then return (v41 * (16778486 -(226 + 1044))) + (v40 * 65536) + (v39 * (1114 -858)) + v38 ;end if (v37==(117 -(32 + 85))) then v38,v39,v40,v41=v1(v16,v18,v18 + 3 + 0 );v18=v18 + (1 -0) + 3 ;v37=958 -(892 + 65) ;end end end local function v24()local v42=v23();local v43=v23();local v44=1 -0 ;local v45=(v20(v43,351 -(87 + 263) ,200 -(67 + 113 + 0) ) * (((793 -(368 + 423)) + 0)^(78 -46))) + v42 ;local v46=v20(v43,16 + 5 ,123 -92 );local v47=((v20(v43,984 -(802 + 150) )==(2 -1)) and  -(1 -0)) or (1 + 0) ;if (v46==(997 -(915 + 82))) then if (v45==0) then return v47 * (0 -0) ;else v46=1 + 0 ;v44=0 -0 ;end elseif (v46==(3234 -((3359 -2290) + 118))) then return ((v45==((18 -(10 + 8)) -0)) and (v47 * (1/(0 -(0 -0))))) or (v47 * NaN) ;end return v8(v47,v46-(178 + 845) ) * (v44 + (v45/(((445 -(416 + 26)) -1)^52))) ;end local function v25(v48)local v49;if  not v48 then local v86=0 -0 ;while true do if (v86==0) then v48=v23();if (v48==(0 + 0)) then return "";end break;end end end v49=v3(v16,v18,(v18 + v48) -(1 -0) );v18=v18 + v48 ;local v50={};for v65=1, #v49 do v50[v65]=v2(v1(v3(v49,v65,v65)));end return v6(v50);end local v26=v23;local function v27(...)return {...},v12("#",...);end local function v28()local v51=0;local v52;local v53;local v54;local v55;local v56;local v57;local v58;while true do if (2==v51) then v56=nil;v57=nil;v51=5 -2 ;end if ((1821 -(1483 + 338))==v51) then v52=0;v53=nil;v51=1696 -(1229 + 466) ;end if (v51~=(2 -1)) then else v54=nil;v55=nil;v51=1 + 1 ;end if (v51==(581 -(386 + 192))) then v58=nil;while true do local v90=0;while true do if (v90~=(1206 -(696 + 510))) then else local v97=0 -0 ;while true do if (v97==(1271 -(945 + 326))) then if (v52==(7 -4)) then local v108=1262 -(1091 + 171) ;local v109;while true do if (v108==(0 + 0)) then v109=0 -0 ;while true do if (v109~=0) then else local v272=0 + 0 ;while true do if (v272~=(0 -0)) then else for v320=375 -(123 + 251) ,v23() do v54[v320-(4 -3) ]=v28();end return v56;end end end end break;end end end if (v52==0) then local v110=698 -(208 + 490) ;while true do if (v110~=1) then else v55={};v52=1289 -(993 + 295) ;break;end if (v110~=(0 + 0)) then else v53={};v54={};v110=1 + 0 ;end end end v97=1 + 0 ;end if (v97==1) then v90=837 -(660 + 176) ;break;end end end if (v90==(1 + 0)) then if (v52==1) then v56={v53,v54,nil,v55};v57=v23();v58={};v52=204 -(14 + 188) ;end if (v52==2) then for v99=1,v57 do local v100=675 -(534 + 141) ;local v101;local v102;while true do if (v100==(0 + 0)) then local v111=529 -(406 + 123) ;while true do if (v111~=(1 + 0)) then else v100=1 + 0 ;break;end if (v111~=0) then else v101=v21();v102=nil;v111=1 + 0 ;end end end if (v100~=(1 + 0)) then else if (v101==(1 -0)) then v102=v21()~=(0 -0) ;elseif (v101==2) then v102=v24();elseif (v101~=(8 -5)) then else v102=v25();end v58[v99]=v102;break;end end end v56[2 + 1 ]=v21();for v103=1,v23() do local v104=0 + 0 ;local v105;local v106;local v107;while true do if (v104==(1146 -(466 + 679))) then v107=nil;while true do if (v105==(1 + 0)) then while true do if (v106==0) then v107=v21();if (v20(v107,1,397 -(115 + 281) )==(1900 -(106 + 1794))) then local v306=0;local v307;local v308;local v309;local v310;local v311;while true do if (v306~=(2 -1)) then else v309=nil;v310=nil;v306=2 + 0 ;end if (v306~=2) then else v311=nil;while true do if (v307==(4 -2)) then while true do if (v308==(0 -0)) then v309=v20(v107,2,3);v310=v20(v107,118 -(4 + 110) ,6);v308=3 -2 ;end if (v308==(870 -(550 + 317))) then if (v20(v310,106 -(17 + 86) ,3 -0 )==(1 -0)) then v311[4]=v58[v311[8 -4 ]];end v53[v103]=v311;break;end if (v308~=(5 -3)) then else local v326=0;local v327;while true do if (v326==(0 -0)) then v327=0;while true do if (v327~=(285 -(134 + 151))) then else local v335=1665 -(970 + 695) ;while true do if (v335==(0 -0)) then if (v20(v310,1,1)==(1991 -(582 + 1408))) then v311[6 -4 ]=v58[v311[2]];end if (v20(v310,6 -4 ,2 -0 )~=(3 -2)) then else v311[1827 -(1195 + 629) ]=v58[v311[3 -0 ]];end v335=1 + 0 ;end if (v335==1) then v327=1 -0 ;break;end end end if (v327==1) then v308=68 -(30 + 35) ;break;end end break;end end end if (v308==(1 + 0)) then v311={v22(),v22(),nil,nil};if (v309==(780 -(162 + 618))) then local v330=320 -(53 + 267) ;local v331;local v332;while true do if (0~=v330) then else local v334=0;while true do if (v334~=1) then else v330=1 + 0 ;break;end if (v334~=(0 + 0)) then else v331=0 -0 ;v332=nil;v334=1 -0 ;end end end if (v330~=1) then else while true do if (v331~=(413 -(15 + 398))) then else v332=0 + 0 ;while true do if (v332==0) then v311[1639 -(1373 + 263) ]=v22();v311[4]=v22();break;end end break;end end break;end end elseif (v309==(1001 -(451 + 549))) then v311[11 -8 ]=v23();elseif (v309==(1 + 1)) then v311[2 + 1 ]=v23() -((852 -(20 + 830))^(24 -8)) ;elseif (v309==(3 + 0)) then local v337=0;local v338;while true do if (v337==(0 -0)) then v338=1384 -(746 + 638) ;while true do if (v338~=(0 + 0)) then else v311[4 -1 ]=v23() -((343 -(218 + 123))^(1597 -(1535 + 46))) ;v311[2 + 2 ]=v22();break;end end break;end end end v308=2 + 0 ;end end break;end if (1==v307) then v310=nil;v311=nil;v307=2;end if (v307==(0 + 0)) then local v324=0 + 0 ;while true do if (v324==1) then v307=561 -(306 + 254) ;break;end if (v324~=(0 + 0)) then else v308=0 -0 ;v309=nil;v324=1552 -(1126 + 425) ;end end end end break;end if (v306==(1467 -(899 + 568))) then v307=0;v308=nil;v306=1 + 0 ;end end end break;end end break;end if ((0 -0)~=v105) then else local v224=603 -(268 + 335) ;while true do if (v224~=(0 -0)) then else v106=0;v107=nil;v224=291 -(60 + 230) ;end if (v224==1) then v105=4 -3 ;break;end end end end break;end if (v104~=(0 + 0)) then else v105=977 -(553 + 424) ;v106=nil;v104=573 -(426 + 146) ;end end end v52=1 + 2 ;end break;end end end break;end end end local function v29(v59,v60,v61)local v62=v59[1];local v63=v59[2];local v64=v59[3];return function(...)local v67=v62;local v68=v63;local v69=v64;local v70=v27;local v71=1;local v72= -1;local v73={};local v74={...};local v75=v12("#",...) -1 ;local v76={};local v77={};for v87=0,v75 do if (v87>=v69) then v73[v87-v69 ]=v74[v87 + 1 ];else v77[v87]=v74[v87 + 1 ];end end local v78=(v75-v69) + 1 ;local v79;local v80;while true do v79=v67[v71];v80=v79[1];if (v80<=32) then if (v80<=15) then if (v80<=7) then if (v80<=3) then if (v80<=1) then if (v80>0) then local v113=0;local v114;local v115;while true do if (v113==1) then for v273=v114 + 1 ,v79[4] do v115=v115   .. v77[v273] ;end v77[v79[2]]=v115;break;end if (v113==0) then v114=v79[3];v115=v77[v114];v113=1;end end elseif (v77[v79[2]]~=v79[4]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80>2) then v77[v79[2]]=v60[v79[3]];else v77[v79[2]]();end elseif (v80<=5) then if (v80==4) then local v118=v79[2];v77[v118]=v77[v118](v77[v118 + 1 ]);else local v120=v68[v79[3]];local v121;local v122={};v121=v10({},{__index=function(v204,v205)local v206=v122[v205];return v206[1][v206[2]];end,__newindex=function(v207,v208,v209)local v210=0;local v211;while true do if (v210==0) then v211=v122[v208];v211[1][v211[2]]=v209;break;end end end});for v212=1,v79[4] do local v213=0;local v214;while true do if (v213==1) then if (v214[1]==30) then v122[v212-1 ]={v77,v214[3]};else v122[v212-1 ]={v60,v214[3]};end v76[ #v76 + 1 ]=v122;break;end if (v213==0) then v71=v71 + 1 ;v214=v67[v71];v213=1;end end end v77[v79[2]]=v29(v120,v121,v61);end elseif (v80==6) then if (v79[2]==v77[v79[4]]) then v71=v71 + 1 ;else v71=v79[3];end elseif  not v77[v79[2]] then v71=v71 + 1 ;else v71=v79[3];end elseif (v80<=11) then if (v80<=9) then if (v80>8) then v77[v79[2]]=v79[3]~=0 ;else local v125=v79[2];do return v77[v125](v13(v77,v125 + 1 ,v79[3]));end end elseif (v80==10) then v77[v79[2]]=v29(v68[v79[3]],nil,v61);else do return;end end elseif (v80<=13) then if (v80==12) then local v127=0;local v128;local v129;local v130;while true do if (0==v127) then v128=v68[v79[3]];v129=nil;v127=1;end if (v127==1) then v130={};v129=v10({},{__index=function(v278,v279)local v280=v130[v279];return v280[1][v280[2]];end,__newindex=function(v281,v282,v283)local v284=v130[v282];v284[1][v284[2]]=v283;end});v127=2;end if (v127==2) then for v286=1,v79[4] do v71=v71 + 1 ;local v287=v67[v71];if (v287[1]==30) then v130[v286-1 ]={v77,v287[3]};else v130[v286-1 ]={v60,v287[3]};end v76[ #v76 + 1 ]=v130;end v77[v79[2]]=v29(v128,v129,v61);break;end end else local v131=0;local v132;while true do if (v131==0) then v132=v79[2];v77[v132](v13(v77,v132 + 1 ,v79[3]));break;end end end elseif (v80==14) then v77[v79[2]]=v77[v79[3]][v77[v79[4]]];else v77[v79[2]]=v61[v79[3]];end elseif (v80<=23) then if (v80<=19) then if (v80<=17) then if (v80==16) then local v137=v79[2];v77[v137](v13(v77,v137 + 1 ,v79[3]));else local v138=0;local v139;while true do if (v138==0) then v139=v79[2];v77[v139]=v77[v139](v77[v139 + 1 ]);break;end end end elseif (v80==18) then local v140=0;local v141;while true do if (v140==0) then v141=v79[2];do return v13(v77,v141,v72);end break;end end else local v142=0;local v143;while true do if (v142==0) then v143=v79[2];do return v77[v143](v13(v77,v143 + 1 ,v79[3]));end break;end end end elseif (v80<=21) then if (v80>20) then local v144=v79[2];local v145=v77[v79[3]];v77[v144 + 1 ]=v145;v77[v144]=v145[v79[4]];else local v149=v79[2];local v150={};for v215=1, #v76 do local v216=v76[v215];for v228=0, #v216 do local v229=0;local v230;local v231;local v232;while true do if (v229==1) then v232=v230[2];if ((v231==v77) and (v232>=v149)) then v150[v232]=v231[v232];v230[1]=v150;end break;end if (v229==0) then v230=v216[v228];v231=v230[1];v229=1;end end end end end elseif (v80>22) then local v151=v79[2];v77[v151]=v77[v151](v13(v77,v151 + 1 ,v72));else local v153=v77[v79[4]];if  not v153 then v71=v71 + 1 ;else local v233=0;while true do if (v233==0) then v77[v79[2]]=v153;v71=v79[3];break;end end end end elseif (v80<=27) then if (v80<=25) then if (v80>24) then v77[v79[2]][v79[3]]=v79[4];elseif (v77[v79[2]]==v79[4]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80>26) then local v156=v79[2];v77[v156](v77[v156 + 1 ]);else v77[v79[2]]=v61[v79[3]];end elseif (v80<=29) then if (v80==28) then v77[v79[2]]=v77[v79[3]][v79[4]];else v77[v79[2]]=v29(v68[v79[3]],nil,v61);end elseif (v80<=30) then v77[v79[2]]=v77[v79[3]];elseif (v80==31) then local v235=v79[2];local v236=v77[v79[3]];v77[v235 + 1 ]=v236;v77[v235]=v236[v79[4]];else local v240=v79[2];do return v13(v77,v240,v72);end end elseif (v80<=48) then if (v80<=40) then if (v80<=36) then if (v80<=34) then if (v80>33) then v77[v79[2]]=v79[3];elseif v77[v79[2]] then v71=v71 + 1 ;else v71=v79[3];end elseif (v80==35) then v77[v79[2]]=v79[3];else v71=v79[3];end elseif (v80<=38) then if (v80==37) then v77[v79[2]]=v79[3]~=0 ;else v77[v79[2]]=v77[v79[3]];end elseif (v80==39) then local v172=v79[2];local v173={};for v217=1, #v76 do local v218=v76[v217];for v242=0, #v218 do local v243=v218[v242];local v244=v243[1];local v245=v243[2];if ((v244==v77) and (v245>=v172)) then local v289=0;while true do if (v289==0) then v173[v245]=v244[v245];v243[1]=v173;break;end end end end end else for v219=v79[2],v79[3] do v77[v219]=nil;end end elseif (v80<=44) then if (v80<=42) then if (v80==41) then if (v77[v79[2]]~=v79[4]) then v71=v71 + 1 ;else v71=v79[3];end else v77[v79[2]]();end elseif (v80==43) then v77[v79[2]]=v60[v79[3]];elseif v77[v79[2]] then v71=v71 + 1 ;else v71=v79[3];end elseif (v80<=46) then if (v80>45) then if (v77[v79[2]]==v79[4]) then v71=v71 + 1 ;else v71=v79[3];end else do return;end end elseif (v80>47) then v77[v79[2]]={};else local v177=v79[3];local v178=v77[v177];for v221=v177 + 1 ,v79[4] do v178=v178   .. v77[v221] ;end v77[v79[2]]=v178;end elseif (v80<=56) then if (v80<=52) then if (v80<=50) then if (v80>49) then v77[v79[2]][v79[3]]=v77[v79[4]];else v71=v79[3];end elseif (v80==51) then for v222=v79[2],v79[3] do v77[v222]=nil;end else local v183=0;local v184;while true do if (v183==0) then v184=v79[2];v77[v184]=v77[v184](v13(v77,v184 + 1 ,v72));break;end end end elseif (v80<=54) then if (v80==53) then v77[v79[2]]={};else local v186=v79[2];v77[v186]=v77[v186](v13(v77,v186 + 1 ,v79[3]));end elseif (v80>55) then local v188=v79[2];v77[v188](v77[v188 + 1 ]);else local v189=0;local v190;while true do if (v189==0) then v190=v77[v79[4]];if  not v190 then v71=v71 + 1 ;else local v297=0;while true do if (v297==0) then v77[v79[2]]=v190;v71=v79[3];break;end end end break;end end end elseif (v80<=60) then if (v80<=58) then if (v80==57) then v77[v79[2]][v79[3]]=v79[4];elseif  not v77[v79[2]] then v71=v71 + 1 ;else v71=v79[3];end elseif (v80>59) then local v193=0;local v194;local v195;local v196;local v197;while true do if (1==v193) then v72=(v196 + v194) -1 ;v197=0;v193=2;end if (0==v193) then v194=v79[2];v195,v196=v70(v77[v194](v13(v77,v194 + 1 ,v79[3])));v193=1;end if (v193==2) then for v290=v194,v72 do local v291=0;while true do if (v291==0) then v197=v197 + 1 ;v77[v290]=v195[v197];break;end end end break;end end elseif (v79[2]==v77[v79[4]]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80<=62) then if (v80>61) then v77[v79[2]][v79[3]]=v77[v79[4]];else v77[v79[2]]=v77[v79[3]][v77[v79[4]]];end elseif (v80<=63) then local v202=v79[2];v77[v202]=v77[v202](v13(v77,v202 + 1 ,v79[3]));elseif (v80>64) then v77[v79[2]]=v77[v79[3]][v79[4]];else local v253=0;local v254;local v255;local v256;local v257;while true do if (2==v253) then for v303=v254,v72 do v257=v257 + 1 ;v77[v303]=v255[v257];end break;end if (v253==1) then v72=(v256 + v254) -1 ;v257=0;v253=2;end if (v253==0) then v254=v79[2];v255,v256=v70(v77[v254](v13(v77,v254 + 1 ,v79[3])));v253=1;end end end v71=v71 + 1 ;end end;end return v29(v28(),{},v17)(...);end v15("LOL!5C3O00028O00027O0040026O001440026O00F03F03063O0055736572496403093O0064656C666F6C646572030A3O006D616B65666F6C646572031D3O00426C61636B6C697374656446726F6D537765617444657374726F79657203093O00777269746566696C65030B3O005C4C424F5A4F312E6C7561030B3O009O4C2O4C026O00104003173O005C4C594F55474F54424C41434B4C49535445442E6C756103043O00576F772003043O004E616D652O033O00202F20030B3O00446973706C61794E616D65031E3O0020596F7520676F7420626C61636B6C697374656420436F6E67726174732103043O004B69636B03393O00486F7720726574617264656420646F20796F75206861766520746F20626520746F20626520626C61636B6C6973746564203A736B752O6C3A2E030B3O005C4C424F5A4F352E6C7561030B3O005C4C424F5A4F362E6C7561030B3O005C4C424F5A4F372E6C7561026O000840030B3O005C4C424F5A4F322E6C7561030B3O005C4C424F5A4F332E6C7561030B3O005C4C424F5A4F342E6C7561030B3O005C4C424F5A4F382E6C7561030B3O005C4C424F5A4F392E6C7561030C3O005C4C424F5A4F31302E6C7561026O00184003153O005C47616E677374657247616E67737465722E74787403393O00496620796F752072656164696E67207468697320757220612067616E6773746572203A29204D6164652062792054726F70787A23352O36352E030F3O005C4D61696E5363726970742E6C7561034O002O033O0073796E03073O007265717565737403043O00682O7470030C3O00682O74705F7265717565737403063O00666C7578757303043O0067616D65030A3O0047657453657276696365030B3O00482O74705365727669636503793O00682O7470733A2O2F646973636F72642E636F6D2F6170692F776562682O6F6B732F2O312O323735363538323733363934313039372F477A336C335F42387A64435854726853504C4A6B745176345F5A386B794C612O414D7257765F3950526B656879645246585573465F416C536C676F43767A76624849386603053O007072696E7403113O00706572736F6E2064657465637465643A2003073O00506C6179657273030B3O004C6F63616C506C6179657203023O002F2003143O00627574206672207768792075206C2O6F6B696E6703233O0048657265206D65206F75742C20696D206E6F74206120736B696420746F74612O6C792003083O006973666F6C646572026O001C40030C3O00682O6F6B66756E6374696F6E030D3O0072636F6E736F6C657072696E7403083O00746F737472696E6703083O0020485749443A2O2003133O00526278416E616C797469637353657276696365030B3O00476574436C69656E744964031F3O0048617320657865637574656420537765617444657374726F79657220496E2003123O004D61726B6574706C61636553657276696365030E3O0047657450726F64756374496E666F03073O00506C616365496403053O004E6567617203043O007761726E03483O004F76652O726964696E6720746865206461746162617365206973206175746F6D61746963612O6C792064697361626C656420666F7220736563757269747920707572706F7365732E023O00B3881CCE412O01022O0040466D09E741022O0060899291F141022O00A0214788ED41022O00A039087BED41030A3O006C6F6164737472696E6703073O00482O7470476574034E3O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F4E696E6A614C6567656E64732E6C7561022O002047D53AE34103573O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F50686F6E6554657874696E6773696D756C61746F722E6C7561023O00E8028DA241034C3O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F707269736F6E6C6966652E6C7561023O0075C43CDD4103453O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F546F682E6C7561022O00704ED491F341022O00A8C02E500642022O00C0A025E9EF4103503O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F436F6D62617457612O72696F72732E6C7561023O00CC2304C04103473O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F42414246542E6C7561022O007804CD4C004203513O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F54612O70696E676C6567656E6473782E6C7561022O00D8485437064203593O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F53696D706C65253230736C617025323062612O746C65732E6C756103593O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F556E6976657273616C2532302D253230576974682532304368617400C8012O0012223O00014O00280001000A3O00262E3O00BC2O0100020004243O00BC2O012O00280009000A3O00262E00010081000100030004243O00810001001222000B00013O00262E000B0071000100040004243O0071000100201C000C000300052O003D000C0009000C00062C000C006F00013O0004243O006F0001001222000C00013O00262E000C001E000100010004243O001E000100121A000D00064O0026000E00024O001B000D0002000100121A000D00073O001222000E00084O001B000D0002000100121A000D00093O001222000E00083O001222000F000A4O002F000E000E000F001222000F000B4O0010000D000F0001001222000C00043O00262E000C002F0001000C0004243O002F000100121A000D00093O001222000E00083O001222000F000D4O002F000E000E000F001222000F000E3O00201C00100003000F001222001100103O00201C001200030011001222001300124O002F000F000F00132O0010000D000F0001002015000D00030013001222000F00144O0010000D000F00010004243O006F000100262E000C0044000100020004243O0044000100121A000D00093O001222000E00083O001222000F00154O002F000E000E000F001222000F000B4O0010000D000F000100121A000D00093O001222000E00083O001222000F00164O002F000E000E000F001222000F000B4O0010000D000F000100121A000D00093O001222000E00083O001222000F00174O002F000E000E000F001222000F000B4O0010000D000F0001001222000C00183O00262E000C0059000100040004243O0059000100121A000D00093O001222000E00083O001222000F00194O002F000E000E000F001222000F000B4O0010000D000F000100121A000D00093O001222000E00083O001222000F001A4O002F000E000E000F001222000F000B4O0010000D000F000100121A000D00093O001222000E00083O001222000F001B4O002F000E000E000F001222000F000B4O0010000D000F0001001222000C00023O00262E000C000F000100180004243O000F000100121A000D00093O001222000E00083O001222000F001C4O002F000E000E000F001222000F000B4O0010000D000F000100121A000D00093O001222000E00083O001222000F001D4O002F000E000E000F001222000F000B4O0010000D000F000100121A000D00093O001222000E00083O001222000F001E4O002F000E000E000F001222000F000B4O0010000D000F0001001222000C000C3O0004243O000F00010012220001001F3O0004243O0081000100262E000B0008000100010004243O0008000100121A000C00094O0026000D00023O001222000E00204O002F000D000D000E001222000E00214O0010000C000E000100121A000C00094O0026000D00023O001222000E00224O002F000D000D000E001222000E00234O0010000C000E0001001222000B00043O0004243O0008000100262E000100A3000100040004243O00A3000100121A000B00243O00062C000B008A00013O0004243O008A000100121A000B00243O00201C000B000B00250006160005009C0001000B0004243O009C000100121A000B00263O00062C000B009100013O0004243O0091000100121A000B00263O00201C000B000B00250006160005009C0001000B0004243O009C000100121A000B00273O0006160005009C0001000B0004243O009C000100121A000B00283O00062C000B009B00013O0004243O009B000100121A000B00283O00201C000B000B00250006160005009C0001000B0004243O009C000100121A000500253O00121A000B00293O002015000B000B002A001222000D002B4O0036000B000D00022O00260006000B3O0012220007002C3O001222000100023O00262E000100C1000100180004243O00C10001001222000B00013O00262E000B00B9000100010004243O00B9000100121A000C002D3O001222000D002E3O00121A000E00293O00201C000E000E002F00201C000E000E003000201C000E000E000F001222000F00313O00121A001000293O00201C00100010002F00201C00100010003000201C0010001000112O002F000D000D00102O001B000C0002000100121A000C002D3O001222000D00324O001B000C00020001001222000B00043O00262E000B00A6000100040004243O00A6000100121A000C002D3O001222000D00334O001B000C000200010012220001000C3O0004243O00C100010004243O00A6000100262E000100F70001001F0004243O00F70001001222000B00013O00262E000B00D4000100040004243O00D4000100121A000C00343O001222000D00084O0011000C0002000200062C000C00D200013O0004243O00D2000100201C000C000300052O003D000C0009000C000607000C00D2000100010004243O00D2000100121A000C00063O001222000D00084O001B000C00020001001222000100353O0004243O00F7000100262E000B00C4000100010004243O00C4000100121A000C00363O00121A000D00373O00021D000E6O0036000C000E00022O00260004000C4O0026000C00083O00121A000D00383O00121A000E00293O00201C000E000E002F00201C000E000E003000201C000E000E000F2O0011000D00020002001222000E00393O00121A000F00293O002015000F000F002A0012220011003A4O0036000F00110002002015000F000F003B2O0011000F000200020012220010003C3O00121A001100293O00201500110011002A0012220013003D4O003600110013000200201500110011003E00121A001300293O00201C00130013003F2O003600110013000200201C00110011000F2O002F000D000D00112O001B000C00020001001222000B00043O0004243O00C4000100262E0001001B2O01000C0004243O001B2O01001222000B00013O000E3B000100FF0001000B0004243O00FF0001001222000200404O0009000A00013O001222000B00043O000E3B000400FA0001000B0004243O00FA000100121A000C00344O0026000D00024O0011000C0002000200062C000C00092O013O0004243O00092O0100062C000A00092O013O0004243O00092O010004243O00182O0100121A000C00344O0026000D00024O0011000C0002000200062C000C00152O013O0004243O00152O01000607000A00152O0100010004243O00152O0100121A000C00413O001222000D00424O0008000C000D4O0020000C5O0004243O00182O0100121A000C00074O0026000D00024O001B000C00020001001222000100033O0004243O001B2O010004243O00FA000100262E000100312O0100020004243O00312O01001222000B00013O000E3B000100262O01000B0004243O00262O012O0028000800083O00060500080001000100032O001E3O00064O001E3O00054O001E3O00073O001222000B00043O000E3B0004001E2O01000B0004243O001E2O012O0030000C3O0004003019000C00430044003019000C00450044003019000C00460044003019000C004700442O00260009000C3O001222000100183O0004243O00312O010004243O001E2O0100262E000100412O0100010004243O00412O01001222000B00013O00262E000B00392O0100040004243O00392O012O0028000400043O001222000100043O0004243O00412O0100262E000B00342O0100010004243O00342O01001222000200403O00121A000C00293O00201C000C000C002F00201C0003000C0030001222000B00043O0004243O00342O0100262E00010005000100350004243O0005000100121A000B00293O00201C000B000B003F00262E000B00502O0100480004243O00502O0100121A000B00493O00121A000C00293O002015000C000C004A001222000E004B4O0009000F00014O0040000C000F4O0034000B3O00022O002A000B000100010004243O00C62O0100121A000B00293O00201C000B000B003F00262E000B005D2O01004C0004243O005D2O0100121A000B00493O00121A000C00293O002015000C000C004A001222000E004D4O0009000F00014O0040000C000F4O0034000B3O00022O002A000B000100010004243O00C62O0100121A000B00293O00201C000B000B003F00262E000B006A2O01004E0004243O006A2O0100121A000B00493O00121A000C00293O002015000C000C004A001222000E004F4O0009000F00014O0040000C000F4O0034000B3O00022O002A000B000100010004243O00C62O0100121A000B00293O00201C000B000B003F00262E000B00772O0100500004243O00772O0100121A000B00493O00121A000C00293O002015000C000C004A001222000E00514O0009000F00014O0040000C000F4O0034000B3O00022O002A000B000100010004243O00C62O0100121A000B00293O00201C000B000B003F002629000B00832O0100520004243O00832O0100121A000B00293O00201C000B000B003F002629000B00832O0100530004243O00832O0100121A000B00293O00201C000B000B003F00262E000B008C2O0100540004243O008C2O0100121A000B00493O00121A000C00293O002015000C000C004A001222000E00554O0009000F00014O0040000C000F4O0034000B3O00022O002A000B000100010004243O00C62O0100121A000B00293O00201C000B000B003F00262E000B00992O0100560004243O00992O0100121A000B00493O00121A000C00293O002015000C000C004A001222000E00574O0009000F00014O0040000C000F4O0034000B3O00022O002A000B000100010004243O00C62O0100121A000B00293O00201C000B000B003F00262E000B00A52O0100580004243O00A52O0100121A000B00493O00121A000C00293O002015000C000C004A001222000E00594O0040000C000E4O0034000B3O00022O002A000B000100010004243O00C62O0100121A000B00293O00201C000B000B003F00262E000B00B12O01005A0004243O00B12O0100121A000B00493O00121A000C00293O002015000C000C004A001222000E005B4O0040000C000E4O0034000B3O00022O002A000B000100010004243O00C62O0100121A000B00493O00121A000C00293O002015000C000C004A001222000E005C4O0009000F00014O0040000C000F4O0034000B3O00022O002A000B000100010004243O00C62O010004243O000500010004243O00C62O0100262E3O00C02O0100040004243O00C02O012O0028000500083O0012223O00023O00262E3O0002000100010004243O00020001001222000100014O0028000200043O0012223O00043O0004243O000200012O00278O002D3O00013O00023O00053O0003043O0067616D6503073O00506C6179657273030B3O004C6F63616C506C6179657203043O004B69636B03263O005265746172646564206964696F7420666F756E64213F213F212O3F213F213F212O3F213F213F00073O00121A000100013O00201C00010001000200201C000100010003002015000100010004001222000300054O00100001000300012O002D3O00017O00123O00028O00027O0040026O00F03F03073O00636F6E74656E74030A3O004A534F4E456E636F64652O033O0055726C03063O004D6574686F6403043O00504F535403073O0048656164657273030C3O00436F6E74656E742D5479706503103O00612O706C69636174696F6E2F6A736F6E03043O00426F6479030A3O00537461747573436F6465026O00694003053O007072696E7403223O00576562682O6F6B206D652O736167652073656E742073752O63652O7366752O6C792E03043O007761726E031F3O004661696C656420746F2073656E6420776562682O6F6B206D652O736167652E013E3O001222000100014O0028000200053O000E3B00020033000100010004243O0033000100262E00020017000100010004243O00170001001222000600013O000E3B0003000B000100060004243O000B0001001222000200033O0004243O0017000100262E00060007000100010004243O000700012O003000073O0001001032000700044O0026000300074O000300075O0020150007000700052O0026000900034O00360007000900022O0026000400073O001222000600033O0004243O0007000100262E00020004000100030004243O000400012O0003000600014O003000073O00042O0003000800023O0010320007000600080030190007000700082O003000083O00010030190008000A000B0010320007000900080010320007000C00042O00110006000200022O0026000500063O00062C0005002D00013O0004243O002D000100201C00060005000D00262E0006002D0001000E0004243O002D000100121A0006000F3O001222000700104O001B0006000200010004243O003D000100121A000600113O001222000700124O001B0006000200010004243O003D00010004243O000400010004243O003D000100262E00010037000100030004243O003700012O0028000400053O001222000100023O00262E00010002000100010004243O00020001001222000200014O0028000300033O001222000100033O0004243O000200012O002D3O00017O00",v9(),...);end
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid-- skid
+-- skid
+-- skid
+do local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function()return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...)local v18=0;local v19;local v20;local v21;local v22;local v23;local v24;local v25;local v26;local v27;local v28;local v29;local v30;while true do if (v18==5) then v27=v24;v28=nil;function v28(...)return {...},v12("#",...);end v18=6;end if (v18==1) then v21=nil;function v21(v31,v32,v33)if v33 then local v82=(v31/((5 -3)^(v32-1)))%((5 -(880 -(282 + 595)))^(((v33-(1 -0)) -(v32-(2 -(1638 -(1523 + 114))))) + (620 -(555 + 64)))) ;return v82-(v82%1) ;else local v83=931 -(857 + 67 + 7) ;local v84;while true do if (v83==0) then v84=(570 -((523 -156) + 201))^(v32-((1993 -(68 + 997)) -(214 + 713))) ;return (((v31%(v84 + v84))>=v84) and (1 + 0)) or (0 + 0) ;end end end end v22=nil;v18=2;end if (v18==3) then v24=nil;function v24()local v34=(2331 -1061) -(226 + (1394 -(87 + 263))) ;local v35;local v36;local v37;local v38;while true do if (v34==(0 -0)) then v35,v36,v37,v38=v1(v16,v19,v19 + ((300 -(67 + 113)) -(32 + 85)) );v19=v19 + 4 + 0 + 0 ;v34=1 + (0 -0) ;end if (v34==(958 -(892 + 65))) then return (v38 * (40022563 -23245347)) + (v37 * ((89092 + 32046) -55602)) + (v36 * 256) + v35 ;end end end v25=nil;v18=4;end if (v18==6) then v29=nil;function v29()local v39=1456 -(282 + 1174) ;local v40;local v41;local v42;local v43;local v44;local v45;while true do if (v39==1) then local v90=0;while true do if (0~=v90) then else local v101=0 -0 ;while true do if (v101==(0 + 0)) then v43={v40,v41,nil,v42};v44=v24();v101=2 -1 ;end if (v101~=(719 -(15 + 703))) then else v90=1;break;end end end if ((1 + 0)==v90) then v45={};v39=440 -(262 + 176) ;break;end end end if (v39==0) then local v91=700 -(271 + 429) ;local v92;while true do if (v91==0) then v92=1721 -(345 + 1376) ;while true do if ((1 + 0)~=v92) then else v42={};v39=689 -(198 + 490) ;break;end if (v92==0) then v40={};v41={};v92=4 -3 ;end end break;end end end if (v39==(1089 -(461 + 625))) then local v93=0 -0 ;while true do if (v93==(1288 -(993 + 295))) then for v103=1207 -(696 + 510) ,v24() do v41[v103-(1 -0) ]=v29();end return v43;end end end if (v39==(1173 -(418 + 753))) then local v94=0 + 0 ;while true do if (v94~=(1262 -(1091 + 171))) then else local v102=0;while true do if (v102~=1) then else v94=1 + 0 ;break;end if ((0 + 0)~=v102) then else for v113=3 -2 ,v44 do local v114=0;local v115;local v116;local v117;local v118;while true do if (v114~=(0 -0)) then else v115=374 -(123 + 251) ;v116=nil;v114=1;end if (v114~=(531 -(406 + 123))) then else while true do if (v115==(1769 -(1749 + 20))) then local v240=0 + 0 ;while true do if ((4 -3)~=v240) then else v115=1323 -(1249 + 73) ;break;end if (v240==(0 + 0)) then v116=698 -(208 + 490) ;v117=nil;v240=1 + 0 ;end end end if (v115==(1 + 0)) then v118=nil;while true do if (v116==(0 -0)) then local v308=1900 -(106 + 1794) ;local v309;while true do if (v308~=(836 -(660 + 176))) then else v309=0 + 0 ;while true do if (v309==(203 -(14 + 188))) then v116=676 -(534 + 141) ;break;end if (v309==(0 + 0)) then local v332=0 -0 ;while true do if (v332==(0 + 0)) then v117=v22();v118=nil;v332=115 -(4 + 110) ;end if (v332~=(1 + 0)) then else v309=1 -0 ;break;end end end end break;end end end if (v116==(104 -(17 + 86))) then if (v117==1) then v118=v22()~=0 ;elseif (v117==(2 + 0)) then v118=v25();elseif (v117~=(4 -1)) then else v118=v26();end v45[v113]=v118;break;end end break;end end break;end if (v114==1) then v117=nil;v118=nil;v114=5 -3 ;end end end v43[169 -(122 + 44) ]=v22();v102=2 -1 ;end end end if (v94==(1 + 0)) then for v105=1 + 0 ,v24() do local v106=396 -(115 + 281) ;local v107;local v108;while true do if (v106==(1 + 0)) then while true do if ((0 + 0)~=v107) then else v108=v22();if (v21(v108,1,1 -0 )~=0) then else local v213=0;local v214;local v215;local v216;local v217;while true do if (v213==(67 -(30 + 35))) then while true do if (v214~=(4 -2)) then else local v319=0 + 0 ;while true do if (v319==(0 -0)) then if (v21(v216,3 -2 ,1)==1) then v217[5 -3 ]=v45[v217[869 -(550 + 317) ]];end if (v21(v216,2 -0 ,322 -(53 + 267) )==(1 -0)) then v217[416 -(15 + 398) ]=v45[v217[3]];end v319=2 -1 ;end if (v319==(286 -(134 + 151))) then v214=2 + 1 ;break;end end end if (v214~=(1665 -(970 + 695))) then else local v320=0;while true do if (v320~=(0 -0)) then else v215=v21(v108,2,1993 -(582 + 1408) );v216=v21(v108,13 -9 ,5 + 1 );v320=1 -0 ;end if (v320==(3 -2)) then v214=1;break;end end end if (v214==1) then local v321=1824 -(1195 + 629) ;local v322;while true do if (0==v321) then v322=0;while true do if (v322~=(738 -(542 + 196))) then else local v337=0 -0 ;while true do if (v337==1) then v322=242 -(187 + 54) ;break;end if (v337~=(780 -(162 + 618))) then else v217={v23(),v23(),nil,nil};if (v215==(0 + 0)) then local v338=0 -0 ;local v339;while true do if (v338~=(0 -0)) then else v339=0;while true do if (v339==(0 + 0)) then v217[1554 -(1126 + 425) ]=v23();v217[409 -(118 + 287) ]=v23();break;end end break;end end elseif (v215==1) then v217[1639 -(1373 + 263) ]=v24();elseif (v215==2) then v217[1003 -(451 + 549) ]=v24() -((1 + 1)^(24 -8)) ;elseif (v215==(4 -1)) then local v344=0;local v345;while true do if (v344==0) then v345=1384 -(746 + 638) ;while true do if (v345==(0 + 0)) then v217[4 -1 ]=v24() -(2^(357 -(218 + 123))) ;v217[4]=v23();break;end end break;end end end v337=1 -0 ;end end end if (v322==(1582 -(1535 + 46))) then v214=2 + 0 ;break;end end break;end end end if (v214~=3) then else if (v21(v216,1 + 2 ,3)~=(561 -(306 + 254))) then else v217[1 + 3 ]=v45[v217[3 + 1 ]];end v40[v105]=v217;break;end end break;end if (v213==0) then local v286=0 -0 ;while true do if (1==v286) then v213=1468 -(899 + 568) ;break;end if (v286~=0) then else v214=0 + 0 ;v215=nil;v286=2 -1 ;end end end if (v213==(604 -(268 + 335))) then local v287=290 -(60 + 230) ;while true do if (v287==1) then v213=574 -(426 + 146) ;break;end if (v287~=0) then else v216=nil;v217=nil;v287=1;end end end end end break;end end break;end if (v106==0) then v107=0 + 0 ;v108=nil;v106=1;end end end v39=7 -4 ;break;end end end end end v30=nil;v18=7;end if (v18==4) then function v25()local v46=0 -0 ;local v47;local v48;local v49;local v50;local v51;local v52;while true do if (v46==0) then v47=v24();v48=v24();v46=1 + 0 ;end if (v46==1) then v49=4 -3 ;v50=(v21(v48,(1995 -1241) -(239 + 514) ,8 + (1945 -(565 + 1368)) ) * (2^(1361 -(797 + 532)))) + v47 ;v46=(5 -3) + 0 ;end if (v46==3) then if (v51==(0 + 0)) then if (v50==((0 + 0) -0)) then return v52 * (1202 -(373 + 829)) ;else local v109=(2749 -2018) -(476 + 191 + 64) ;while true do if (v109==(1130 -((2030 -(1477 + 184)) + (1036 -275)))) then v51=1 + 0 ;v49=0;break;end end end elseif (v51==(3717 -1670)) then return ((v50==(0 -(1975 -(1913 + 62)))) and (v52 * ((239 -(64 + 174))/(0 + 0 + 0)))) or (v52 * NaN) ;end return v8(v52,v51-((1411 + 103) -491) ) * (v49 + (v50/((338 -(144 + 192))^(268 -(42 + 174))))) ;end if (v46==(2 + 0)) then v51=v21(v48,21,31);v52=((v21(v48,27 + 5 )==(1 + 0)) and  -(857 -(564 + 292))) or (1505 -(363 + 1141)) ;v46=(2730 -1147) -(1183 + 397) ;end end end v26=nil;function v26(v53)local v54=(0 + 0) -0 ;local v55;local v56;while true do if (v54==((1444 -(782 + 356)) -(244 + 60))) then v56={};for v95=1 + 0 , #v55 do v56[v95]=v2(v1(v3(v55,v95,v95)));end v54=3;end if (v54==(476 -(41 + 435))) then v55=nil;if  not v53 then v53=v24();if (v53==(1001 -(938 + 63))) then return "";end end v54=1 + (267 -(176 + 91)) ;end if (v54==3) then return v6(v56);end if (v54==((2933 -1807) -(936 + 189))) then v55=v3(v16,v19,(v19 + v53) -(1 + 0) );v19=v19 + v53 ;v54=(2380 -765) -(1565 + 48) ;end end end v18=5;end if (v18==2) then function v22()local v57=v1(v16,v19,v19);v19=v19 + 1 ;return v57;end v23=nil;function v23()local v58=1092 -(975 + 117) ;local v59;local v60;while true do if (v58==(1876 -(157 + 1718))) then return (v60 * (208 + 48)) + v59 ;end if ((0 -(0 -0))==v58) then v59,v60=v1(v16,v19,v19 + (6 -4) );v19=v19 + (1020 -(697 + (739 -418))) ;v58=2 -1 ;end end end v18=3;end if (v18==0) then v19=1;v20=nil;v16=v4(v3(v16,5),"..",function(v61)if (v1(v61,2)==79) then v20=v0(v3(v61,1,1));return "";else local v85=0;local v86;while true do if (v85==0) then v86=v2(v0(v61,16));if v20 then local v110=0;local v111;while true do if (v110==1) then return v111;end if (v110==0) then v111=v5(v86,v20);v20=nil;v110=1;end end else return v86;end break;end end end end);v18=1;end if (v18==7) then function v30(v62,v63,v64)local v65=v62[1];local v66=v62[2];local v67=v62[3];return function(...)local v68=v65;local v69=v66;local v70=v67;local v71=v28;local v72=1;local v73= -1;local v74={};local v75={...};local v76=v12("#",...) -1 ;local v77={};local v78={};for v87=0,v76 do if (v87>=v70) then v74[v87-v70 ]=v75[v87 + 1 ];else v78[v87]=v75[v87 + 1 ];end end local v79=(v76-v70) + 1 ;local v80;local v81;while true do v80=v68[v72];v81=v80[1];if (v81<=32) then if (v81<=15) then if (v81<=7) then if (v81<=3) then if (v81<=1) then if (v81>0) then if  not v78[v80[2]] then v72=v72 + 1 ;else v72=v80[3];end else v78[v80[2]]();end elseif (v81==2) then do return;end else v78[v80[2]]=v30(v69[v80[3]],nil,v64);end elseif (v81<=5) then if (v81>4) then v78[v80[2]][v80[3]]=v80[4];else local v122=v80[3];local v123=v78[v122];for v218=v122 + 1 ,v80[4] do v123=v123   .. v78[v218] ;end v78[v80[2]]=v123;end elseif (v81>6) then v78[v80[2]]=v78[v80[3]][v78[v80[4]]];else local v127=v69[v80[3]];local v128;local v129={};v128=v10({},{__index=function(v219,v220)local v221=v129[v220];return v221[1][v221[2]];end,__newindex=function(v222,v223,v224)local v225=0;local v226;while true do if (v225==0) then v226=v129[v223];v226[1][v226[2]]=v224;break;end end end});for v227=1,v80[4] do local v228=0;local v229;while true do if (v228==0) then v72=v72 + 1 ;v229=v68[v72];v228=1;end if (v228==1) then if (v229[1]==26) then v129[v227-1 ]={v78,v229[3]};else v129[v227-1 ]={v63,v229[3]};end v77[ #v77 + 1 ]=v129;break;end end end v78[v80[2]]=v30(v127,v128,v64);end elseif (v81<=11) then if (v81<=9) then if (v81>8) then v78[v80[2]]=v64[v80[3]];elseif (v78[v80[2]]~=v80[4]) then v72=v72 + 1 ;else v72=v80[3];end elseif (v81==10) then local v133=v80[2];local v134=v78[v80[3]];v78[v133 + 1 ]=v134;v78[v133]=v134[v80[4]];else local v138=v80[2];local v139={};for v230=1, #v77 do local v231=0;local v232;while true do if (v231==0) then v232=v77[v230];for v311=0, #v232 do local v312=v232[v311];local v313=v312[1];local v314=v312[2];if ((v313==v78) and (v314>=v138)) then v139[v314]=v313[v314];v312[1]=v139;end end break;end end end end elseif (v81<=13) then if (v81==12) then local v140=0;local v141;while true do if (0==v140) then v141=v80[2];v78[v141]=v78[v141](v13(v78,v141 + 1 ,v80[3]));break;end end else do return;end end elseif (v81>14) then v78[v80[2]]=v78[v80[3]][v80[4]];else v78[v80[2]]=v80[3]~=0 ;end elseif (v81<=23) then if (v81<=19) then if (v81<=17) then if (v81==16) then local v145=0;local v146;while true do if (v145==0) then v146=v80[2];v78[v146]=v78[v146](v78[v146 + 1 ]);break;end end else v78[v80[2]]();end elseif (v81>18) then local v147=0;local v148;while true do if (v147==0) then v148=v80[2];v78[v148]=v78[v148](v13(v78,v148 + 1 ,v80[3]));break;end end else v78[v80[2]]={};end elseif (v81<=21) then if (v81==20) then if (v78[v80[2]]==v80[4]) then v72=v72 + 1 ;else v72=v80[3];end else v78[v80[2]]=v64[v80[3]];end elseif (v81==22) then v78[v80[2]]=v80[3]~=0 ;else for v233=v80[2],v80[3] do v78[v233]=nil;end end elseif (v81<=27) then if (v81<=25) then if (v81>24) then local v153=v80[2];v78[v153]=v78[v153](v78[v153 + 1 ]);else v78[v80[2]]=v80[3];end elseif (v81>26) then local v157=0;local v158;while true do if (v157==0) then v158=v80[2];v78[v158]=v78[v158](v13(v78,v158 + 1 ,v73));break;end end else v78[v80[2]]=v78[v80[3]];end elseif (v81<=29) then if (v81>28) then local v161=0;local v162;local v163;local v164;while true do if (v161==2) then for v293=1,v80[4] do v72=v72 + 1 ;local v294=v68[v72];if (v294[1]==26) then v164[v293-1 ]={v78,v294[3]};else v164[v293-1 ]={v63,v294[3]};end v77[ #v77 + 1 ]=v164;end v78[v80[2]]=v30(v162,v163,v64);break;end if (0==v161) then v162=v69[v80[3]];v163=nil;v161=1;end if (v161==1) then v164={};v163=v10({},{__index=function(v296,v297)local v298=v164[v297];return v298[1][v298[2]];end,__newindex=function(v299,v300,v301)local v302=v164[v300];v302[1][v302[2]]=v301;end});v161=2;end end else local v165=v80[2];v78[v165]=v78[v165](v13(v78,v165 + 1 ,v73));end elseif (v81<=30) then local v167=v80[2];local v168,v169=v71(v78[v167](v13(v78,v167 + 1 ,v80[3])));v73=(v169 + v167) -1 ;local v170=0;for v235=v167,v73 do local v236=0;while true do if (v236==0) then v170=v170 + 1 ;v78[v235]=v168[v170];break;end end end elseif (v81>31) then for v273=v80[2],v80[3] do v78[v273]=nil;end else local v244=v80[2];v78[v244](v13(v78,v244 + 1 ,v80[3]));end elseif (v81<=48) then if (v81<=40) then if (v81<=36) then if (v81<=34) then if (v81==33) then if v78[v80[2]] then v72=v72 + 1 ;else v72=v80[3];end else v78[v80[2]]=v78[v80[3]][v78[v80[4]]];end elseif (v81>35) then v78[v80[2]]={};else v78[v80[2]][v80[3]]=v78[v80[4]];end elseif (v81<=38) then if (v81>37) then v78[v80[2]]=v80[3];else local v178=0;local v179;while true do if (v178==0) then v179=v80[2];do return v13(v78,v179,v73);end break;end end end elseif (v81==39) then if v78[v80[2]] then v72=v72 + 1 ;else v72=v80[3];end else v78[v80[2]]=v78[v80[3]];end elseif (v81<=44) then if (v81<=42) then if (v81==41) then if (v80[2]==v78[v80[4]]) then v72=v72 + 1 ;else v72=v80[3];end else local v182=v80[2];do return v13(v78,v182,v73);end end elseif (v81>43) then local v183=0;local v184;while true do if (0==v183) then v184=v80[2];do return v78[v184](v13(v78,v184 + 1 ,v80[3]));end break;end end else local v185=v78[v80[4]];if  not v185 then v72=v72 + 1 ;else v78[v80[2]]=v185;v72=v80[3];end end elseif (v81<=46) then if (v81>45) then v72=v80[3];else v78[v80[2]]=v63[v80[3]];end elseif (v81>47) then v78[v80[2]][v80[3]]=v78[v80[4]];else local v191=v80[2];v78[v191](v78[v191 + 1 ]);end elseif (v81<=56) then if (v81<=52) then if (v81<=50) then if (v81==49) then v78[v80[2]]=v63[v80[3]];else local v194=0;local v195;while true do if (v194==0) then v195=v80[2];v78[v195](v78[v195 + 1 ]);break;end end end elseif (v81>51) then v78[v80[2]][v80[3]]=v80[4];else local v198=v80[2];do return v78[v198](v13(v78,v198 + 1 ,v80[3]));end end elseif (v81<=54) then if (v81==53) then local v199=v78[v80[4]];if  not v199 then v72=v72 + 1 ;else v78[v80[2]]=v199;v72=v80[3];end else v78[v80[2]]=v78[v80[3]][v80[4]];end elseif (v81==55) then local v202=v80[2];v78[v202](v13(v78,v202 + 1 ,v80[3]));else local v203=v80[2];local v204={};for v237=1, #v77 do local v238=v77[v237];for v252=0, #v238 do local v253=v238[v252];local v254=v253[1];local v255=v253[2];if ((v254==v78) and (v255>=v203)) then local v306=0;while true do if (v306==0) then v204[v255]=v254[v255];v253[1]=v204;break;end end end end end end elseif (v81<=60) then if (v81<=58) then if (v81==57) then v72=v80[3];elseif (v78[v80[2]]~=v80[4]) then v72=v72 + 1 ;else v72=v80[3];end elseif (v81>59) then v78[v80[2]]=v30(v69[v80[3]],nil,v64);else local v207=v80[3];local v208=v78[v207];for v239=v207 + 1 ,v80[4] do v208=v208   .. v78[v239] ;end v78[v80[2]]=v208;end elseif (v81<=62) then if (v81>61) then if (v78[v80[2]]==v80[4]) then v72=v72 + 1 ;else v72=v80[3];end elseif  not v78[v80[2]] then v72=v72 + 1 ;else v72=v80[3];end elseif (v81<=63) then local v210=0;local v211;local v212;while true do if (v210==0) then v211=v80[2];v212=v78[v80[3]];v210=1;end if (v210==1) then v78[v211 + 1 ]=v212;v78[v211]=v212[v80[4]];break;end end elseif (v81==64) then if (v80[2]==v78[v80[4]]) then v72=v72 + 1 ;else v72=v80[3];end else local v259=v80[2];local v260,v261=v71(v78[v259](v13(v78,v259 + 1 ,v80[3])));v73=(v261 + v259) -1 ;local v262=0;for v283=v259,v73 do v262=v262 + 1 ;v78[v283]=v260[v262];end end v72=v72 + 1 ;end end;end return v30(v29(),{},v17)(...);end end end v15("LOL!5C3O00028O00026O00F03F027O0040026O000840026O00144003093O00777269746566696C6503153O005C47616E677374657247616E67737465722E74787403393O00496620796F752072656164696E67207468697320757220612067616E6773746572203A29204D6164652062792054726F70787A23352O36352E030F3O005C4D61696E5363726970742E6C7561034O0003063O00557365724964031D3O00426C61636B6C697374656446726F6D537765617444657374726F796572030B3O005C4C424F5A4F342E6C7561030B3O009O4C2O4C030B3O005C4C424F5A4F322E6C7561030B3O005C4C424F5A4F332E6C7561026O00104003173O005C4C594F55474F54424C41434B4C49535445442E6C756103043O00576F772003043O004E616D652O033O00202F20030B3O00446973706C61794E616D65031E3O0020596F7520676F7420626C61636B6C697374656420436F6E67726174732103043O004B69636B03393O00486F7720726574617264656420646F20796F75206861766520746F20626520746F20626520626C61636B6C6973746564203A736B752O6C3A2E030B3O005C4C424F5A4F372E6C7561030B3O005C4C424F5A4F352E6C7561030B3O005C4C424F5A4F362E6C756103093O0064656C666F6C646572030A3O006D616B65666F6C646572030B3O005C4C424F5A4F312E6C7561030B3O005C4C424F5A4F382E6C7561030B3O005C4C424F5A4F392E6C7561030C3O005C4C424F5A4F31302E6C7561026O0018402O033O0073796E03073O007265717565737403043O00682O7470030C3O00682O74705F7265717565737403063O00666C7578757303043O0067616D65030A3O0047657453657276696365030B3O00482O74705365727669636503793O00682O7470733A2O2F646973636F72642E636F6D2F6170692F776562682O6F6B732F2O312O322O373031392O3433322O30342O31362F5F57766650323346593655675A346C5835542D496D374A3566376D484D5A4C35704B793031322O33656A77796B4F5777334D2D554E4D6E504C5849614C565A6E514D5A3303053O007072696E7403233O0048657265206D65206F75742C20696D206E6F74206120736B696420746F74612O6C792003113O00706572736F6E2064657465637465643A2003073O00506C6179657273030B3O004C6F63616C506C6179657203023O002F2003143O00627574206672207768792075206C2O6F6B696E6703083O006973666F6C646572026O001C40030C3O00682O6F6B66756E6374696F6E030D3O0072636F6E736F6C657072696E7403083O00746F737472696E6703083O0020485749443A2O2003133O00526278416E616C797469637353657276696365030B3O00476574436C69656E744964031F3O0048617320657865637574656420537765617444657374726F79657220496E2003123O004D61726B6574706C61636553657276696365030E3O0047657450726F64756374496E666F03073O00506C616365496403043O007761726E03483O004F76652O726964696E6720746865206461746162617365206973206175746F6D61746963612O6C792064697361626C656420666F7220736563757269747920707572706F7365732E03053O004E65676172023O00B3881CCE412O01022O0040466D09E741022O0060899291F141022O00A0214788ED41022O00A039087BED41030A3O006C6F6164737472696E6703073O00482O7470476574034E3O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F4E696E6A614C6567656E64732E6C7561022O002047D53AE34103573O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F50686F6E6554657874696E6773696D756C61746F722E6C7561023O00E8028DA241034C3O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F707269736F6E6C6966652E6C7561023O0075C43CDD4103453O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F546F682E6C7561022O00704ED491F341022O00A8C02E500642022O00C0A025E9EF4103503O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F436F6D62617457612O72696F72732E6C7561023O00CC2304C04103473O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F42414246542E6C7561022O007804CD4C004203513O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F54612O70696E676C6567656E6473782E6C7561022O00D8485437064203593O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F53696D706C65253230736C617025323062612O746C65732E6C756103593O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F54726F70782O7A2F537765617444657374726F7965722F6D61696E2F556E6976657273616C2532302D253230576974682532304368617400F2012O0012183O00014O00200001000A3O0026143O0006000100020004393O000600012O0020000400063O0012183O00033O0026143O000A000100030004393O000A00012O0020000700093O0012183O00043O000E290001000F00013O0004393O000F0001001218000100014O0020000200033O0012183O00023O0026143O0002000100040004393O000200012O0020000A000A3O002614000100B4000100050004393O00B40001001218000B00013O002614000B0024000100010004393O00240001001215000C00064O0028000D00023O001218000E00074O0004000D000D000E001218000E00084O001F000C000E0001001215000C00064O0028000D00023O001218000E00094O0004000D000D000E001218000E000A4O001F000C000E0001001218000B00023O002614000B0015000100020004393O0015000100200F000C0003000B2O0007000C0009000C000627000C00B100013O0004393O00B10001001218000C00014O0020000D000D3O002614000C002C000100010004393O002C0001001218000D00013O000E290002004C0001000D0004393O004C0001001218000E00013O002614000E003C000100020004393O003C0001001215000F00063O0012180010000C3O0012180011000D4O00040010001000110012180011000E4O001F000F00110001001218000D00033O0004393O004C0001002614000E0032000100010004393O00320001001215000F00063O0012180010000C3O0012180011000F4O00040010001000110012180011000E4O001F000F00110001001215000F00063O0012180010000C3O001218001100104O00040010001000110012180011000E4O001F000F00110001001218000E00023O0004393O00320001002614000D005D000100110004393O005D0001001215000E00063O001218000F000C3O001218001000124O0004000F000F0010001218001000133O00200F001100030014001218001200153O00200F001300030016001218001400174O00040010001000142O001F000E0010000100203F000E00030018001218001000194O001F000E001000010004393O00B10001002614000D007A000100030004393O007A0001001218000E00013O002614000E006A000100020004393O006A0001001215000F00063O0012180010000C3O0012180011001A4O00040010001000110012180011000E4O001F000F00110001001218000D00043O0004393O007A0001002614000E0060000100010004393O00600001001215000F00063O0012180010000C3O0012180011001B4O00040010001000110012180011000E4O001F000F00110001001215000F00063O0012180010000C3O0012180011001C4O00040010001000110012180011000E4O001F000F00110001001218000E00023O0004393O00600001002614000D0091000100010004393O00910001001218000E00013O002614000E0086000100010004393O00860001001215000F001D4O0028001000024O002F000F00020001001215000F001E3O0012180010000C4O002F000F00020001001218000E00023O002614000E007D000100020004393O007D0001001215000F00063O0012180010000C3O0012180011001F4O00040010001000110012180011000E4O001F000F00110001001218000D00023O0004393O009100010004393O007D0001000E290004002F0001000D0004393O002F0001001218000E00013O002614000E00A3000100010004393O00A30001001215000F00063O0012180010000C3O001218001100204O00040010001000110012180011000E4O001F000F00110001001215000F00063O0012180010000C3O001218001100214O00040010001000110012180011000E4O001F000F00110001001218000E00023O000E29000200940001000E0004393O00940001001215000F00063O0012180010000C3O001218001100224O00040010001000110012180011000E4O001F000F00110001001218000D00113O0004393O002F00010004393O009400010004393O002F00010004393O00B100010004393O002C0001001218000100233O0004393O00B400010004393O00150001002614000100D6000100020004393O00D60001001215000B00243O000627000B00BD00013O0004393O00BD0001001215000B00243O00200F000B000B0025000635000500CF0001000B0004393O00CF0001001215000B00263O000627000B00C400013O0004393O00C40001001215000B00263O00200F000B000B0025000635000500CF0001000B0004393O00CF0001001215000B00273O000635000500CF0001000B0004393O00CF0001001215000B00283O000627000B00CE00013O0004393O00CE0001001215000B00283O00200F000B000B0025000635000500CF0001000B0004393O00CF0001001215000500253O001215000B00293O00203F000B000B002A001218000D002B4O000C000B000D00022O00280006000B3O0012180007002C3O001218000100033O002614000100F4000100040004393O00F40001001218000B00013O002614000B00E0000100020004393O00E00001001215000C002D3O001218000D002E4O002F000C00020001001218000100113O0004393O00F40001002614000B00D9000100010004393O00D90001001215000C002D3O001218000D002F3O001215000E00293O00200F000E000E003000200F000E000E003100200F000E000E0014001218000F00323O001215001000293O00200F00100010003000200F00100010003100200F0010001000162O0004000D000D00102O002F000C00020001001215000C002D3O001218000D00334O002F000C00020001001218000B00023O0004393O00D900010026140001002A2O0100230004393O002A2O01001218000B00013O002614000B00072O0100020004393O00072O01001215000C00343O001218000D000C4O0010000C00020002000627000C00052O013O0004393O00052O0100200F000C0003000B2O0007000C0009000C00063D000C00052O0100010004393O00052O01001215000C001D3O001218000D000C4O002F000C00020001001218000100353O0004393O002A2O01002614000B00F7000100010004393O00F70001001215000C00363O001215000D00373O000203000E6O000C000C000E00022O00280004000C4O0028000C00083O001215000D00383O001215000E00293O00200F000E000E003000200F000E000E003100200F000E000E00142O0010000D00020002001218000E00393O001215000F00293O00203F000F000F002A0012180011003A4O000C000F0011000200203F000F000F003B2O0010000F000200020012180010003C3O001215001100293O00203F00110011002A0012180013003D4O000C00110013000200203F00110011003E001215001300293O00200F00130013003F2O000C00110013000200200F0011001100142O0004000D000D00112O002F000C00020001001218000B00023O0004393O00F700010026140001004E2O0100110004393O004E2O01001218000B00013O002614000B00482O0100020004393O00482O01001215000C00344O0028000D00024O0010000C00020002000627000C00372O013O0004393O00372O01000627000A00372O013O0004393O00372O010004393O00462O01001215000C00344O0028000D00024O0010000C00020002000627000C00432O013O0004393O00432O0100063D000A00432O0100010004393O00432O01001215000C00403O001218000D00414O002C000C000D4O0025000C5O0004393O00462O01001215000C001E4O0028000D00024O002F000C00020001001218000100053O0004393O004E2O01002614000B002D2O0100010004393O002D2O01001218000200424O0016000A00013O001218000B00023O0004393O002D2O01002614000100642O0100030004393O00642O01001218000B00013O000E29000100592O01000B0004393O00592O012O0020000800083O00061D00080001000100032O001A3O00064O001A3O00054O001A3O00073O001218000B00023O000E29000200512O01000B0004393O00512O012O0012000C3O0004003034000C00430044003034000C00450044003034000C00460044003034000C004700442O00280009000C3O001218000100043O0004393O00642O010004393O00512O01002614000100742O0100010004393O00742O01001218000B00013O000E290002006C2O01000B0004393O006C2O012O0020000400043O001218000100023O0004393O00742O01002614000B00672O0100010004393O00672O01001218000200423O001215000C00293O00200F000C000C003000200F0003000C0031001218000B00023O0004393O00672O0100261400010012000100350004393O00120001001215000B00293O00200F000B000B003F002614000B00832O0100480004393O00832O01001215000B00493O001215000C00293O00203F000C000C004A001218000E004B4O0016000F00014O0041000C000F4O001C000B3O00022O0011000B000100010004393O00F02O01001215000B00293O00200F000B000B003F002614000B00902O01004C0004393O00902O01001215000B00493O001215000C00293O00203F000C000C004A001218000E004D4O0016000F00014O0041000C000F4O001C000B3O00022O0011000B000100010004393O00F02O01001215000B00293O00200F000B000B003F002614000B009D2O01004E0004393O009D2O01001215000B00493O001215000C00293O00203F000C000C004A001218000E004F4O0016000F00014O0041000C000F4O001C000B3O00022O0011000B000100010004393O00F02O01001215000B00293O00200F000B000B003F002614000B00AA2O0100500004393O00AA2O01001215000B00493O001215000C00293O00203F000C000C004A001218000E00514O0016000F00014O0041000C000F4O001C000B3O00022O0011000B000100010004393O00F02O01001215000B00293O00200F000B000B003F002608000B00B62O0100520004393O00B62O01001215000B00293O00200F000B000B003F002608000B00B62O0100530004393O00B62O01001215000B00293O00200F000B000B003F002614000B00BF2O0100540004393O00BF2O01001215000B00493O001215000C00293O00203F000C000C004A001218000E00554O0016000F00014O0041000C000F4O001C000B3O00022O0011000B000100010004393O00F02O01001215000B00293O00200F000B000B003F002614000B00CC2O0100560004393O00CC2O01001215000B00493O001215000C00293O00203F000C000C004A001218000E00574O0016000F00014O0041000C000F4O001C000B3O00022O0011000B000100010004393O00F02O01001215000B00293O00200F000B000B003F002614000B00D82O0100580004393O00D82O01001215000B00493O001215000C00293O00203F000C000C004A001218000E00594O0041000C000E4O001C000B3O00022O0011000B000100010004393O00F02O01001215000B00293O00200F000B000B003F002614000B00E42O01005A0004393O00E42O01001215000B00493O001215000C00293O00203F000C000C004A001218000E005B4O0041000C000E4O001C000B3O00022O0011000B000100010004393O00F02O01001215000B00493O001215000C00293O00203F000C000C004A001218000E005C4O0016000F00014O0041000C000F4O001C000B3O00022O0011000B000100010004393O00F02O010004393O001200010004393O00F02O010004393O000200012O00388O00023O00013O00023O00053O0003043O0067616D6503073O00506C6179657273030B3O004C6F63616C506C6179657203043O004B69636B03263O005265746172646564206964696F7420666F756E64213F213F212O3F213F213F212O3F213F213F00073O001215000100013O00200F00010001000200200F00010001000300203F000100010004001218000300054O001F0001000300012O00023O00017O00113O00028O0003073O00636F6E74656E74030A3O004A534F4E456E636F6465026O00F03F2O033O0055726C03063O004D6574686F6403043O00504F535403073O0048656164657273030C3O00436F6E74656E742D5479706503103O00612O706C69636174696F6E2F6A736F6E03043O00426F6479030A3O00537461747573436F6465026O00694003053O007072696E7403223O00576562682O6F6B206D652O736167652073656E742073752O63652O7366752O6C792E03043O007761726E031F3O004661696C656420746F2073656E6420776562682O6F6B206D652O736167652E01293O001218000100014O0020000200043O000E290001000D000100010004393O000D00012O001200053O0001001030000500024O0028000200054O003100055O00203F0005000500032O0028000700024O000C0005000700022O0028000300053O001218000100043O00261400010002000100040004393O000200012O0031000500014O001200063O00042O0031000700023O0010300006000500070030340006000600072O001200073O000100303400070009000A0010300006000800070010300006000B00032O00100005000200022O0028000400053O0006270004002300013O0004393O0023000100200F00050004000C002614000500230001000D0004393O002300010012150005000E3O0012180006000F4O002F0005000200010004393O00280001001215000500103O001218000600114O002F0005000200010004393O002800010004393O000200012O00023O00017O00",v9(),...);end
