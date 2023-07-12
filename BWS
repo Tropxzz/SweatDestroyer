@@ -1,0 +1,294 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Sweatdestroyer - Bedwars", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+local killauraboxes = {}
+local killauramethod = {["Value"] = "Normal"}
+local killauratarget = {["Enabled"] = false}
+local killauratargethighlight = {["Enabled"] = false}
+local killaurarangecircle = {["Enabled"] = false}
+local killaurarangecirclepart
+local killauracolor = {["Value"] = 0.44}
+local killaurarange = {["Value"] = 1}
+local killauraangle = {["Value"] = 90}
+local killauramouse = {["Enabled"] = false}
+
+local RunLoops = {RenderStepTable = {}, StepTable = {}, HeartTable = {}}
+do
+	function RunLoops:BindToRenderStep(name, num, func)
+		if RunLoops.RenderStepTable[name] == nil then
+			RunLoops.RenderStepTable[name] = game:GetService("RunService").RenderStepped:Connect(func)
+		end
+	end
+
+	function RunLoops:UnbindFromRenderStep(name)
+		if RunLoops.RenderStepTable[name] then
+			RunLoops.RenderStepTable[name]:Disconnect()
+			RunLoops.RenderStepTable[name] = nil
+		end
+	end
+
+	function RunLoops:BindToStepped(name, num, func)
+		if RunLoops.StepTable[name] == nil then
+			RunLoops.StepTable[name] = game:GetService("RunService").Stepped:Connect(func)
+		end
+	end
+
+	function RunLoops:UnbindFromStepped(name)
+		if RunLoops.StepTable[name] then
+			RunLoops.StepTable[name]:Disconnect()
+			RunLoops.StepTable[name] = nil
+		end
+	end
+
+	function RunLoops:BindToHeartbeat(name, num, func)
+		if RunLoops.HeartTable[name] == nil then
+			RunLoops.HeartTable[name] = game:GetService("RunService").Heartbeat:Connect(func)
+		end
+	end
+
+	function RunLoops:UnbindFromHeartbeat(name)
+		if RunLoops.HeartTable[name] then
+			RunLoops.HeartTable[name]:Disconnect()
+			RunLoops.HeartTable[name] = nil
+		end
+	end
+end
+
+local Tab = Window:MakeTab({
+    Name = "Main",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Buy wool (has to be near shop)",
+    Callback = function()
+        local args = {
+            [1] = {
+                shopItem = {
+                    currency = "iron",
+                    itemType = "wool_white",
+                    amount = 16,
+                    price = 8,
+                    category = "Blocks"
+                },
+                shopId = "1_item_shop"
+            }
+        }
+        game:GetService("ReplicatedStorage").rbxts_include.node_modules["@rbxts"].net.out._NetManaged.BedwarsPurchaseItem:InvokeServer(unpack(args))
+    end
+})
+
+Tab:AddButton({
+    Name = "Go home",
+    Callback = function()
+        local args = {
+            [1] = "recall"
+        }
+        game:GetService("ReplicatedStorage")["events-@easy-games/game-core:shared/game-core-networking@getEvents.Events"]:WaitForChild("useAbility"):FireServer(unpack(args))
+    end
+})
+
+Tab:AddButton({
+    Name = "Bridge // Blue // Astect (The place with alot of grass)",
+    Callback = function()
+      while wait() do
+local ar1gs = {
+    [1] = {
+        ["blockType"] = "wool_blue",
+        ["position"] = Vector3.new(64, 14, 111),
+        ["blockData"] = 0
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@easy-games"):WaitForChild("block-engine"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("PlaceBlock"):InvokeServer(unpack(ar1gs))
+
+local args = {
+    [1] = {
+        ["blockType"] = "wool_blue",
+        ["position"] = Vector3.new(65, 14, 111),
+        ["blockData"] = 0
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@easy-games"):WaitForChild("block-engine"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("PlaceBlock"):InvokeServer(unpack(args))
+
+local arg2s = {
+    [1] = {
+        ["blockType"] = "wool_blue",
+        ["position"] = Vector3.new(66, 14, 111),
+        ["blockData"] = 0
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@easy-games"):WaitForChild("block-engine"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("PlaceBlock"):InvokeServer(unpack(arg2s))
+
+local ["1a1rgs"] = {
+    [1] = {
+        ["blockType"] = "wool_blue",
+        ["position"] = Vector3.new(62, 14, 111),
+        ["blockData"] = 0
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@easy-games"):WaitForChild("block-engine"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("PlaceBlock"):InvokeServer(unpack(["1a1rgs"]))
+
+local ar2g2s = {
+    [1] = {
+        ["blockType"] = "wool_blue",
+        ["position"] = Vector3.new(63, 14, 111),
+        ["blockData"] = 0
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@easy-games"):WaitForChild("block-engine"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("PlaceBlock"):InvokeServer(unpack(ar2g2s))
+
+local ["penis"] = {
+    [1] = {
+        ["blockType"] = "wool_blue",
+        ["position"] = Vector3.new(60, 14, 111),
+        ["blockData"] = 0
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@easy-games"):WaitForChild("block-engine"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("PlaceBlock"):InvokeServer(unpack(["penis"]))
+end
+    end
+})
+
+local function equipArmorParts(armorParts)
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+    for _, part in ipairs(armorParts) do
+        local clone = part:Clone()
+        clone.Parent = character
+        clone:FindFirstChildOfClass("Weld"):Clone().Parent = clone
+        clone:SetPrimaryPartCFrame(character.PrimaryPart.CFrame)
+        clone.CanCollide = false
+        clone.Transparency = 0
+        clone.Anchored = false
+    end
+end
+
+Tab:AddButton({
+    Name = "Emerald Gear (Only for you lol)",
+    Callback = function()
+        local Assets = game.ReplicatedStorage.Assets
+        local Main2 = Assets.Armor
+        local Emeboots = Main2:WaitForChild("emerald_boots"):GetChildren()
+        local emerald_chestplate = Main2:WaitForChild("emerald_chestplate"):GetChildren()
+        local emerald_helmet = Main2:WaitForChild("emerald_helmet"):GetChildren()
+
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+        if character then
+            equipArmorParts(Emeboots)
+            equipArmorParts(emerald_chestplate)
+            equipArmorParts(emerald_helmet)
+        end
+    end
+})
+
+Tab:AddButton({
+    Name = "Kill aura",
+    Callback = function()
+        for i, v in pairs(killauraboxes) do
+            if v:IsA("BoxHandleAdornment") and v.Adornee then
+                local cf = v.Adornee.CFrame
+                local onex, oney, onez = cf:ToEulerAnglesXYZ()
+                v.CFrame = CFrame.new() * CFrame.Angles(-onex, -oney, -onez)
+            end
+        end
+        if entity.isAlive then
+            if killauraaimcirclepart then
+                killauraaimcirclepart.Position = targetedplayer and closestpos(targetedplayer.RootPart, entity.character.HumanoidRootPart.Position) or Vector3.new(0, 0, 0)
+            end
+            local Root = entity.character.HumanoidRootPart
+            if Root then
+                if killaurarangecirclepart then
+                    killaurarangecirclepart.Position = Root.Position - Vector3.new(0, entity.character.Humanoid.HipHeight, 0)
+                end
+                local Neck = entity.character.Head:FindFirstChild("Neck")
+                local LowerTorso = Root.Parent:FindFirstChild("LowerTorso")
+                local RootC0 = LowerTorso:FindFirstChild("Root")
+                if Neck and RootC0 then
+                    if orig == nil then
+                        orig = Neck.C0.p
+                    end
+                    if orig2 == nil then
+                        orig2 = RootC0.C0.p
+                    end
+                    if orig2 then
+                        if targetedplayer ~= nil and killauracframe["Enabled"] then
+                            local targetPos = targetedplayer.RootPart.Position + Vector3.new(0, 2, 0)
+                            local direction = (Vector3.new(targetPos.X, targetPos.Y, targetPos.Z) - entity.character.Head.Position).Unit
+                            local direction2 = (Vector3.new(targetPos.X, Root.Position.Y, targetPos.Z) - Root.Position).Unit
+                            local lookCFrame = (CFrame.new(Vector3.new(), direction))
+                            local lookCFrame2 = (CFrame.new(Vector3.new(), direction2))
+                            Neck.C0 = CFrame.new(orig) * CFrame.Angles(lookCFrame.LookVector.Unit.y, 0, 0)
+                            RootC0.C0 = lookCFrame2 + orig2
+                        else
+                            Neck.C0 = CFrame.new(orig)
+                            RootC0.C0 = CFrame.new(orig2)
+                        end
+                    end
+                end
+            end
+        end
+    end
+})
+
+
+Tab:AddSlider({
+	Name = "Attack Range",
+	Min = 0,
+	Max = 20,
+	Default = 5,
+	Color = Color3.fromRGB(0,0,0),
+	Increment = 1,
+	ValueName = "Range",
+	Callback = function(Value)
+		if killaurarangecirclepart then 
+				killaurarangecirclepart.Size = Vector3.new(val * 0.7, 0.01, val * 0.7)
+			end
+	end    
+})
+
+
+Tab:AddButton({
+	Name = "Auto wool when near shop",
+	Callback = function(Value)
+		local t = Value
+        if t == false then return end
+        while t == true do 
+                 local args = {
+            [1] = {
+                shopItem = {
+                    currency = "iron",
+                    itemType = "wool_white",
+                    amount = 16,
+                    price = 8,
+                    category = "Blocks"
+                },
+                shopId = "1_item_shop"
+            }
+        }
+        game:GetService("ReplicatedStorage").rbxts_include.node_modules["@rbxts"].net.out._NetManaged.BedwarsPurchaseItem:InvokeServer(unpack(args))
+         wait(.4)
+        end
+	end    
+})
+
+
+
+OrionLib:Init()
+
+while true do
+    print("Use Sweatdestoryer.")
+    print("https://scriptblox.com/script/Universal-Script-SweatDestroyer-11300")
+    print("https://rscripts.net/script/sweatdestroyer-muti-game-script-3883")
+    print("https://github.com/Tropxzz")
+    print("Use CursedData.")
+    print("https://rscripts.net/script/CursedDATA-or-Universal-3970")
+    print("Real.")
+    wait(.1)
+    end
