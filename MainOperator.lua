@@ -68,7 +68,11 @@ elseif game.PlaceId == 8750997647 then -- Tapping Legends
 elseif game.PlaceId == 11927193883 then -- Simple Slap Battles
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Simple%20slap%20battles.lua"))()
 else -- Universal
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Universal%20-%20With%20Chat", true))()
+        if game.ReplicatedStorage:FindFirstChild("DefaultChatSystemChatEvents") then
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Universal%20-%20With%20Chat "))()
+    else
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/SweatDestroyer/main/Universal%20-%20WithoutChatt"))()
 
+    end
 end
 
